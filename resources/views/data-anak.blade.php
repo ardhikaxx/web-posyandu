@@ -9,9 +9,34 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Tabel Data Anak</h4>
-                            <div class="table-responsive">
+                            <div class="d-flex ">
+                                <a href="#" class="btn btn-primary btn-sm">Tambah Data Anak &#43;</a>
+                            </div>
+                            <div class="table-responsive text-nowrap">
                                 <table class="table">
-                                    <!-- Isi tabel akan ditambahkan di sini -->
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">No</th>
+                                            <th class="text-center">Nama Lengkap</th>
+                                            <th class="text-center">Tanggal Lahir</th>
+                                            <th class="text-center">Jenis Kelamin</th>
+                                            <th class="text-center">Nama Ibu</th>
+                                            <th class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-border-bottom-0">
+                                        <tr>
+                                            <td class="text-center"><strong>1</strong></td>
+                                            <td class="text-center">Yanuar Ardhika</td>
+                                            <td class="text-center">26/01/2024</td>
+                                            <td class="text-center">laki-laki</td>
+                                            <td class="text-center">Mimi</td>
+                                            <td class="text-center">
+                                                <a href="" class="btn btn-primary btn-sm">Edit</a> |
+                                                <a href="" class="btn btn-danger btn-sm">Delete</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </div>
                         </div>

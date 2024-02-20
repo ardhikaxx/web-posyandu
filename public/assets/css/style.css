@@ -33013,7 +33013,7 @@ div.tagsinput span.tag a {
     transition-property: color;
     -webkit-transition-property: color;
     height: 46px;
-    border-radius: 0px 100px 100px 0px;
+    border-radius: 0px 10px 10px 0px;
 }
 .sidebar .nav .nav-item .nav-link i {
     color: inherit;
