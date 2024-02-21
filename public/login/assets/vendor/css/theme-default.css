@@ -96,15 +96,15 @@
 }
 
 .text-primary {
-  color: #2DACF3 !important;
+  color: #0F6ECD !important;
 }
 
 .text-body[href]:hover {
-  color: #8FD4FD !important;
+  color: #2DACF3 !important;
 }
 
 .bg-primary {
-  background-color: #2DACF3 !important;
+  background-color: #0F6ECD !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus {
@@ -117,7 +117,7 @@ a.bg-primary:hover, a.bg-primary:focus {
 
 .bg-label-primary {
   background-color: #e7e7ff !important;
-  color: #696cff !important;
+  color: #000000 !important;
 }
 
 .border-label-primary {
@@ -184,7 +184,7 @@ button.list-group-item-primary.active {
 }
 
 .card .alert-primary hr {
-  background-color: #696cff !important;
+  background-color: #000000 !important;
 }
 
 .table-primary {
@@ -207,8 +207,8 @@ button.list-group-item-primary.active {
 
 .btn-primary {
   color: #fff;
-  background-color: #8FD4FD;
-  border-color: #8FD4FD;
+  background-color: #0F6ECD;
+  border-color: #0F6ECD;
   box-shadow: 0 0.125rem 0.25rem 0 rgba(143, 212, 253, 0.4);
 }
 .btn-primary:hover {
@@ -307,12 +307,12 @@ button.list-group-item-primary.active {
 
 .form-control:focus,
 .form-select:focus {
-  border-color: #2DACF3;
+  border-color: #0F6ECD;
 }
 
 .input-group:focus-within .form-control,
 .input-group:focus-within .input-group-text {
-  border-color: #2DACF3;
+  border-color: #0F6ECD;
 }
 
 .form-check-input:focus {
@@ -323,8 +323,8 @@ button.list-group-item-primary.active {
   background-color: #eceef1;
 }
 .form-check-input:checked, .form-check-input[type=checkbox]:indeterminate {
-  background-color: #2DACF3;
-  border-color: #2DACF3;
+  background-color: #0F6ECD;
+  border-color: #0F6ECD;
   box-shadow: 0 2px 4px 0 rgba(105, 108, 255, 0.4);
 }
 

@@ -22,25 +22,19 @@
     <div class="container-xxl">
         <div class="authentication-wrapper authentication-basic container-p-y">
           <div class="authentication-inner">
-            <!-- Register -->
             <div class="card">
               <div class="card-body">
-                <!-- Logo -->
                 <div class="app-brand justify-content-center">
                   <a href="index.html" class="app-brand-link gap-2">
                     <span class="app-brand-logo demo">
-                      <img src="{{asset('assets/images/logobiru.png')}}" alt="logo" width="150">
+                      <img src="{{asset('assets/images/logo.png')}}" alt="logo" width="150">
                     </span>
                     
                   </a>
                 </div>
                 <!-- /Logo -->
                 <h4 class="mb-2">Selamat Datang Di Posyandu</h4>
-                @if (Session::get('status') == 'failed')
-                    <p style="color: red">{{Session::get('message')}}</p>
-                @endif
                 <p class="mb-4">Mohon login untuk melanjutkan</p>
-  
                 <form id="formAuthentication" class="mb-3" action="/login" method="POST">
                   @csrf
                   <div class="mb-3">

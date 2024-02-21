@@ -9,19 +9,19 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Tabel Data Anak</h4>
-                            <div class="d-flex ">
-                                <a href="#" class="btn btn-primary btn-sm">Tambah Data Anak &#43;</a>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-light"><span class="text-primary">Tambah Data Anak</span></a>
                             </div>
                             <div class="table-responsive text-nowrap">
-                                <table class="table">
+                                <table class="table text-center text-light">
                                     <thead>
                                         <tr>
-                                            <th class="text-center">No</th>
-                                            <th class="text-center">Nama Lengkap</th>
-                                            <th class="text-center">Tanggal Lahir</th>
-                                            <th class="text-center">Jenis Kelamin</th>
-                                            <th class="text-center">Nama Ibu</th>
-                                            <th class="text-center">Action</th>
+                                            <th class="text-light">No</th>
+                                            <th class="text-light">Nama Lengkap</th>
+                                            <th class="text-light">Tanggal Lahir</th>
+                                            <th class="text-light">Jenis Kelamin</th>
+                                            <th class="text-light">Nama Ibu</th>
+                                            <th class="text-light">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-border-bottom-0">

@@ -18,7 +18,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h6 class="text-primary font-weight-bold">Data Anak</h6>
+                        <h6 class="text-light font-weight-bold">Data Anak</h6>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h6 class="text-primary font-weight-bold">Anak Perempuan</h6>
+                        <h6 class="text-light font-weight-bold">Anak Perempuan</h6>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h6 class="text-primary font-weight-bold">Anak Laki-laki</h6>
+                        <h6 class="text-light font-weight-bold">Anak Laki-laki</h6>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h6 class="text-primary font-weight-bold">Data Ibu</h6>
+                        <h6 class="text-light font-weight-bold">Data Ibu</h6>
                     </div>
                 </div>
             </div>
