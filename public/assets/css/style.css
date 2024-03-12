@@ -10706,7 +10706,7 @@ select.typeahead:focus::-ms-value,
 select.tt-query:focus::-ms-value,
 select.tt-hint:focus::-ms-value {
     color: #495057;
-    background-color: #2a3038;
+    background-color: #006eff;
 }
 
 .form-control-file,
@@ -12509,7 +12509,7 @@ input[type="button"].btn-block {
     height: 0;
     margin: 0.5rem 0;
     overflow: hidden;
-    border-top: 1px solid #2c2e33;
+    border-top: 1px solid #0F6ECD;
 }
 
 .dropdown-item {
@@ -12527,13 +12527,13 @@ input[type="button"].btn-block {
 .dropdown-item:hover {
     color: #fff;
     text-decoration: none;
-    background-color: #fff;
+    background-color: #0F6ECD;
 }
 .dropdown-item.active,
 .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #fff;
+    background-color: #2DACF3;
 }
 .dropdown-item.disabled,
 .dropdown-item:disabled {
@@ -17183,9 +17183,8 @@ input[type="button"].btn-block {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #0F6ECD;
+    background-color: #FFFFFF;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
 }
 .card > hr {
@@ -22568,7 +22567,7 @@ a.text-dark:focus {
 
 .text-muted,
 .preview-list .preview-item .preview-item-content p .content-category {
-    color: #ffff;
+    color: #0F6ECD;
     font-weight: 600;
 }
 
@@ -23348,7 +23347,7 @@ code {
 }
 
 .page-title {
-    color: #ffffff;
+    color: #000;
     font-size: 1.125rem;
     margin-bottom: 0;
 }
@@ -25067,7 +25066,7 @@ code {
     padding-top: 1rem;
 }
 .card .card-title {
-    color: #ffffff;
+    color: #0F6ECD;
     margin-bottom: 1.125rem;
     text-transform: capitalize;
 }
@@ -27038,9 +27037,9 @@ div.tagsinput {
 .icon.icon-box-primary {
     width: 40px;
     height: 37px;
-    background: rgba(0, 144, 231, 0.11);
+    background: rgba(237, 243, 249, 1);
     border-radius: 7px;
-    color: #0090e7;
+    color: #0F6ECD;
 }
 .icon .icon-item {
     font-size: 20px;
@@ -30586,8 +30585,8 @@ body.avgrund-active {
 .swal2-modal .swal2-title {
     font-size: 25px;
     line-height: 1;
-    font-weight: 500;
-    color: #ffffff;
+    font-weight: 600;
+    color: #000;
     font-weight: initial;
     margin-bottom: 0;
 }
@@ -32543,7 +32542,7 @@ div.tagsinput span.tag a {
 
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link .navbar-profile p {
     color: #0F6ECD;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link.create-new-button {
@@ -32603,7 +32602,7 @@ div.tagsinput span.tag a {
     .dropdown-menu.navbar-dropdown
     .dropdown-item:hover {
     color: #fff;
-    background-color: #fff;
+    background-color: #8FD4FD;
 }
 .navbar
     .navbar-menu-wrapper
@@ -33592,11 +33591,9 @@ div.tagsinput span.tag a {
 }
 
 .content-wrapper {
-    background: #F3F8FE;
+    background-color: #EDF3F9;
     padding: 1.875rem 1.75rem;
     width: 100%;
     -webkit-flex-grow: 1;
     flex-grow: 1;
 }
-
-/*# sourceMappingURL=maps/style.css.map */

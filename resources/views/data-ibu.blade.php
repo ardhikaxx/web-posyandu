@@ -10,7 +10,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Tabel Data Ibu</h4>
                                 <div class="d-flex">
-                                    <input href="#" class="btn btn-light"><span class="text-primary">Tambah Data Anak</span></input>
+                                    <input class="form-control" placeholder="Cari">
                                 </div>
                                 <div class="table-responsive text-nowrap">
                                     <table class="table text-center text-light">
@@ -27,13 +27,13 @@
                                         <tbody class="table-border-bottom-0">
                                             <tr>
                                                 <td class="text-center"><strong>1</strong></td>
-                                                <td class="text-center">Yanuar Ardhika</td>
-                                                <td class="text-center">26/01/2024</td>
-                                                <td class="text-center">laki-laki</td>
                                                 <td class="text-center">Mimi</td>
+                                                <td class="text-center">26/01/2024</td>
+                                                <td class="text-center">AB</td>
+                                                <td class="text-center">Pipi</td>
                                                 <td class="text-center">
-                                                    <a href="" class="btn btn-light btn-sm"><span class="text-primary">Edit</span></a> |
-                                                    <a href="" class="btn btn-danger btn-sm">Delete</a>
+                                                    <a href="" class="btn btn-secondary btn-sm icon-btn"><i class="fas fa-edit"></i></a> |
+                                                    <a href="" class="btn btn-danger btn-sm icon-btn"><i class="fas fa-trash-alt"></i></a>
                                                 </td>
                                             </tr>
                                         </tbody>

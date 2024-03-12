@@ -9,16 +9,16 @@
                         <div class="row">
                             <div class="col-8">
                                 <div class="d-flex align-items-center align-self-start">
-                                    <h2 class="mb-0">216</h2>
+                                    <h2 class="text-primary mb-0">216</h2>
                                 </div>
                             </div>
                             <div class="col-4">
-                                <div class="icon icon-box-light">
+                                <div class="icon icon-box-primary">
                                     <span class="mdi mdi-human-handsup icon-item" id="icon-item"></span>
                                 </div>
                             </div>
                         </div>
-                        <h6 class="text-light font-weight-bold">Data Anak</h6>
+                        <h6 class="text-primary font-weight-bold">Data Anak</h6>
                     </div>
                 </div>
             </div>
@@ -28,16 +28,16 @@
                         <div class="row">
                             <div class="col-8">
                                 <div class="d-flex align-items-center align-self-start">
-                                    <h2 class="mb-0">108</h2>
+                                    <h2 class="text-primary mb-0">108</h2>
                                 </div>
                             </div>
                             <div class="col-4">
-                                <div class="icon icon-box-light">
+                                <div class="icon icon-box-primary">
                                     <span class="mdi mdi-human-female icon-item" id="icon-item"></span>
                                 </div>
                             </div>
                         </div>
-                        <h6 class="text-light font-weight-bold">Anak Perempuan</h6>
+                        <h6 class="text-primary font-weight-bold">Anak Perempuan</h6>
                     </div>
                 </div>
             </div>
@@ -47,16 +47,16 @@
                         <div class="row">
                             <div class="col-8">
                                 <div class="d-flex align-items-center align-self-start">
-                                    <h2 class="mb-0">108</h2>
+                                    <h2 class="text-primary mb-0">108</h2>
                                 </div>
                             </div>
                             <div class="col-4">
-                                <div class="icon icon-box-light">
+                                <div class="icon icon-box-primary">
                                     <span class="mdi mdi-human-male icon-item" id="icon-item"></span>
                                 </div>
                             </div>
                         </div>
-                        <h6 class="text-light font-weight-bold">Anak Laki-laki</h6>
+                        <h6 class="text-primary font-weight-bold">Anak Laki-laki</h6>
                     </div>
                 </div>
             </div>
@@ -66,16 +66,16 @@
                         <div class="row">
                             <div class="col-8">
                                 <div class="d-flex align-items-center align-self-start">
-                                    <h2 class="mb-0">136</h2>
+                                    <h2 class="text-primary mb-0">136</h2>
                                 </div>
                             </div>
                             <div class="col-4">
-                                <div class="icon icon-box-light">
+                                <div class="icon icon-box-primary">
                                     <span class="mdi mdi-human-pregnant icon-item" id="icon-item"></span>
                                 </div>
                             </div>
                         </div>
-                        <h6 class="text-light font-weight-bold">Data Ibu</h6>
+                        <h6 class="text-primary font-weight-bold">Data Ibu</h6>
                     </div>
                 </div>
             </div>

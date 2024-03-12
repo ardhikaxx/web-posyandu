@@ -27,4 +27,5 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/jadwal', 'PageController@jadwal')->name('pages.jadwal');
     Route::get('/penimbangan', 'PageController@penimbangan')->name('pages.penimbangan');
     Route::get('/artikel', 'PageController@artikel')->name('pages.artikel');
+    Route::get('/settings', 'PageController@settings')->name('pages.settings');
 });

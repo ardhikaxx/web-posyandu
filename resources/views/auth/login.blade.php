@@ -91,6 +91,37 @@
     <script src="{{asset('login/assets/vendor/js/menu.js')}}"></script>
     <script src="{{asset('login/assets/js/main.js')}}"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+      document.getElementById('formAuthentication').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var username = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        if (!username.trim() && password.trim()) {
+          Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Username harus diisi',
+          });
+        } else if (username.trim() && !password.trim()) {
+          Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Password harus diisi',
+          });
+        } else if (!username.trim() && !password.trim()) {
+          Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Username dan Password harus diisi',
+          });
+        } else {
+          this.submit();
+        }
+      });
+    </script>    
 </body>
 
 </html>

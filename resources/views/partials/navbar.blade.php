@@ -11,16 +11,15 @@
             <li class="nav-item dropdown">
                 <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                     <div class="navbar-profile">
-                        <img class="img-xs rounded-circle" src="assets/images/faces/face15.jpg" alt="">
-                        <p class="mb-0 d-none d-sm-block navbar-profile-name">Ardhika Yanuar</p>
-                        <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                        <p class="mb-0 navbar-profile-name">Ardhika Yanuar</p>
+                        <i class="mdi mdi-menu-down"></i>
                     </div>
                 </a>
-                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list rounded"
                     aria-labelledby="profileDropdown">
                     <h6 class="p-3 mb-0">Profile</h6>
                     <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item preview-item">
+                    <a href="{{ route('pages.settings')}}" class="dropdown-item preview-item">
                         <div class="preview-thumbnail">
                             <div class="preview-icon bg-blue rounded-circle">
                                 <i class="mdi mdi-settings text-success"></i>

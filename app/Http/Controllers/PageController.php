@@ -50,4 +50,9 @@ class PageController extends Controller
     {
         return view('artikel');
     }
+
+    public function settings()
+    {
+        return view('settings');
+    }
 }
