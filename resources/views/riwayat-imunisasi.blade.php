@@ -4,11 +4,11 @@
         <div class="content-wrapper">
             <div class="container">
                 <div class="row">
-                    <h1 class="col-12 text-primary mt-4">Data Anak</h1>
+                    <h1 class="col-12 text-primary mt-4">Data Riwayat Imunisasi</h1>
                     <div class="col-12 mt-4">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Tabel Data Anak</h4>
+                                <h4 class="card-title">Tabel Data Riwayat</h4>
                                 <div class="d-flex justify-content-between">
                                     <a href="#" class="btn btn-primary custom-btn" onclick="showForm()"><span
                                             class="text-light ms-2">Tambah Data Anak</span><i class="fas fa-plus"></i></a>
