@@ -7,7 +7,7 @@
                     <h3 class="fw-bold text-primary mb-1">Edukasi</h3>
                     <p class="text-muted mb-0">Kelola artikel edukasi kesehatan dengan mudah</p>
                 </div>
-                <a href="{{ route('edukasi.create') }}" class="btn btn-primary btn-lg d-flex align-items-center shadow-sm" onclick="showForm()">
+                <a href="{{ route('edukasi.create') }}" class="btn btn-primary btn-lg d-flex align-items-center shadow-sm" onclick="showForm()" style="border-radius: 12px;">
                     <i class="mdi mdi-note-plus me-2 fs-5"></i>
                     <span>Tambah Edukasi</span>
                 </a>
