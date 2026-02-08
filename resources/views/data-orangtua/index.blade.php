@@ -47,9 +47,6 @@
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center gap-3">
-                                                <div class="avatar-sm bg-pink-subtle rounded-circle d-flex align-items-center justify-content-center">
-                                                    <i class="mdi mdi-account-woman text-pink"></i>
-                                                </div>
                                                 <div>
                                                     <span class="fw-semibold d-block">{{ $item->nama_ibu }}</span>
                                                     <small class="text-muted">Ibu</small>
