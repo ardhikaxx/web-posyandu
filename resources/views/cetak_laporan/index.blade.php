@@ -2,13 +2,21 @@
 @section('content')
     <div class="main-panel">
         <div class="content-wrapper">
+            @php
+                $months = [
+                    '01' => 'Januari', '02' => 'Februari', '03' => 'Maret',
+                    '04' => 'April', '05' => 'Mei', '06' => 'Juni',
+                    '07' => 'Juli', '08' => 'Agustus', '09' => 'September',
+                    '10' => 'Oktober', '11' => 'November', '12' => 'Desember'
+                ];
+            @endphp
             <div class="page-header d-flex justify-content-between align-items-center mb-4">
                 <div>
                     <h3 class="fw-bold text-primary mb-1">Laporan Data Posyandu</h3>
                     <p class="text-muted mb-0">Lihat dan cetak laporan data penimbangan anak</p>
                 </div>
                 <div class="d-flex gap-2">
-                    <a href="{{ route('data_laporan.cetakPdf', ['month' => $filterMonth]) }}" class="btn btn-danger btn-lg d-flex align-items-center shadow-sm">
+                    <a href="{{ route('data_laporan.cetakPdf', ['month' => $filterMonth ?? null]) }}" class="btn btn-danger btn-lg d-flex align-items-center shadow-sm">
                         <i class="mdi mdi-file-pdf-box me-2 fs-5"></i>
                         <span>Cetak PDF</span>
                     </a>
@@ -22,7 +30,7 @@
                             <div class="dropdown">
                                 <button class="btn btn-primary dropdown-toggle d-flex align-items-center px-4 py-2" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
                                     <i class="mdi mdi-calendar-filter me-2"></i>
-                                    <span>Filter: {{ $months[$filterMonth] ?? 'Semua Bulan' }}</span>
+                                    <span>Filter: {{ $months[$filterMonth ?? ''] ?? 'Semua Bulan' }}</span>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton" style="max-height: 300px; overflow-y: auto;">
                                     <a class="dropdown-item {{ !$filterMonth ? 'active bg-primary' : '' }}" href="{{ route('data_laporan.index') }}">
@@ -174,7 +182,7 @@
                             <ul class="list-unstyled mb-0">
                                 <li class="d-flex align-items-center gap-2 mb-2">
                                     <i class="mdi mdi-calendar text-primary"></i>
-                                    <span>Periode: <strong>{{ $months[$filterMonth] ?? 'Semua Bulan' }}</strong></span>
+                                    <span>Periode: <strong>{{ $months[$filterMonth ?? ''] ?? 'Semua Bulan' }}</strong></span>
                                 </li>
                                 <li class="d-flex align-items-center gap-2 mb-2">
                                     <i class="mdi mdi-clock-outline text-primary"></i>
