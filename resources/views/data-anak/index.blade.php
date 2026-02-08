@@ -137,20 +137,8 @@
                     if (response.anak && response.ibu) {
                         var anak = response.anak;
                         var ibu = response.ibu;
-                        var avatarColor = anak.jenis_kelamin_anak === 'Perempuan' ? '#e83e8c' : '#0dcaf0';
-                        var avatarIcon = anak.jenis_kelamin_anak === 'Perempuan' ? 'mdi-gender-female' : 'mdi-gender-male';
                         
                         var html = '<div class="detail-modal">';
-                        html += '<div class="profile-header text-center mb-4">';
-                        html += '<div class="avatar-container mx-auto mb-3">';
-                        html += '<div class="avatar-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; background: linear-gradient(135deg, ' + avatarColor + ' 0%, ' + avatarColor + '80 100%); border-radius: 50%; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">';
-                        html += '<i class="mdi ' + avatarIcon + ' text-white" style="font-size: 36px;"></i>';
-                        html += '</div>';
-                        html += '<h5 class="fw-bold mb-1">' + anak.nama_anak + '</h5>';
-                        html += '<span class="badge rounded-pill px-3" style="background-color: ' + avatarColor + '20; color: ' + avatarColor + ';">' + anak.jenis_kelamin_anak + '</span>';
-                        html += '</div>';
-                        html += '</div>';
-                        
                         html += '<div class="info-section">';
                         html += '<div class="info-card mb-3 p-3 rounded-4" style="background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);">';
                         html += '<h6 class="fw-bold mb-3 d-flex align-items-center"><i class="mdi mdi-account-child me-2 text-primary"></i>Data Anak</h6>';
