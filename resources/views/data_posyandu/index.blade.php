@@ -77,7 +77,7 @@
                                             </td>
                                             <td class="text-center">
                                                 <div class="d-flex flex-column align-items-center">
-                                                    <span class="fw-medium">{{ \Carbon\Carbon::parse($items->first()->tanggal_posyandu)->format('d F Y') }}</span>
+                                                    <span class="fw-medium">{{ \Carbon\Carbon::parse($items->first()->tanggal_posyandu)->translatedFormat('d F Y') }}</span>
                                                     <small class="text-muted">{{ \Carbon\Carbon::parse($items->first()->tanggal_posyandu)->translatedFormat('l') }}</small>
                                                 </div>
                                             </td>

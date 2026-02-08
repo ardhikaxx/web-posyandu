@@ -48,7 +48,7 @@
                                                 <i class="mdi mdi-calendar text-warning"></i>
                                             </div>
                                             <div>
-                                                <span class="fw-semibold">{{ \Carbon\Carbon::parse($item->jadwal_posyandu)->format('d F Y') }}</span>
+                                                <span class="fw-semibold">{{ \Carbon\Carbon::parse($item->jadwal_posyandu)->translatedFormat('d F Y') }}</span>
                                                 <small class="text-muted d-block small">{{ \Carbon\Carbon::parse($item->jadwal_posyandu)->translatedFormat('l') }}</small>
                                             </div>
                                         </div>

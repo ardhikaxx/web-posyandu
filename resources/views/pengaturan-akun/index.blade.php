@@ -153,7 +153,7 @@
                                 </li>
                                 <li class="d-flex align-items-center gap-2">
                                     <i class="mdi mdi-clock-outline text-primary"></i>
-                                    <span>Terakhir diperbarui: <strong>{{ now()->format('d F Y') }}</strong></span>
+                                    <span>Terakhir diperbarui: <strong>{{ now()->translatedFormat('d F Y') }}</strong></span>
                                 </li>
                             </ul>
                         </div>

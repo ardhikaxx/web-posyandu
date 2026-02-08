@@ -92,7 +92,7 @@
                                             </td>
                                             <td class="text-center">
                                                 <div class="d-flex flex-column align-items-center">
-                                                    <span class="fw-medium">{{ \Carbon\Carbon::parse($items->first()->tanggal_posyandu)->format('d F Y') }}</span>
+                                                    <span class="fw-medium">{{ \Carbon\Carbon::parse($items->first()->tanggal_posyandu)->translatedFormat('d F Y') }}</span>
                                                     <small class="text-muted">{{ \Carbon\Carbon::parse($items->first()->tanggal_posyandu)->translatedFormat('l') }}</small>
                                                 </div>
                                             </td>
@@ -173,7 +173,7 @@
                                 </li>
                                 <li class="d-flex align-items-center gap-2 mb-2">
                                     <i class="mdi mdi-clock-outline text-primary"></i>
-                                    <span>Tanggal Cetak: <strong>{{ now()->format('d F Y H:i') }}</strong></span>
+                                    <span>Tanggal Cetak: <strong>{{ now()->translatedFormat('d F Y H:i') }}</strong></span>
                                 </li>
                                 <li class="d-flex align-items-center gap-2">
                                     <i class="mdi mdi-printer text-primary"></i>
