@@ -8,7 +8,7 @@
                         <div class="card-body" style="padding: 2rem;">
                             <h4 class="card-title mb-4">Tabel Data Posyandu</h4>
                             <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3 mb-4">
-                                <div class="d-flex flex-column flex-md-row gap-2 w-100 w-lg-auto">
+                                <div class="d-flex flex-column flex-md-row gap-3 w-100 w-lg-auto">
                                     <a href="{{ route('data_posyandu.create') }}" class="btn btn-primary p-2 d-flex align-items-center justify-content-center">
                                         <span class="text-light ms-2">Tambah Data Posyandu</span>
                                         <i class="fas fa-plus ml-2"></i>
