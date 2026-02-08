@@ -139,41 +139,54 @@
                         var ibu = response.ibu;
                         
                         var html = '<div class="detail-modal">';
-                        html += '<div class="info-section">';
-                        html += '<div class="info-card mb-3 p-3 rounded-4" style="background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);">';
-                        html += '<h6 class="fw-bold mb-3 d-flex align-items-center"><i class="mdi mdi-account-child me-2 text-primary"></i>Data Anak</h6>';
-                        html += '<div class="row g-2">';
-                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">NIK</span><p class="fw-medium mb-0">' + anak.nik_anak + '</p></div></div>';
-                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Nama</span><p class="fw-medium mb-0">' + anak.nama_anak + '</p></div></div>';
-                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Tempat Lahir</span><p class="fw-medium mb-0">' + anak.tempat_lahir_anak + '</p></div></div>';
-                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Tanggal Lahir</span><p class="fw-medium mb-0">' + anak.tanggal_lahir_anak + '</p></div></div>';
-                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Anak Ke</span><p class="fw-medium mb-0">' + anak.anak_ke + '</p></div></div>';
-                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Gol. Darah</span><p class="fw-medium mb-0">' + anak.gol_darah_anak + '</p></div></div>';
+                        html += '<div class="modal-header-section mb-4 text-center">';
+                        html += '<h5 class="fw-bold mb-2">Detail Data Anak</h5>';
+                        html += '<p class="text-muted small mb-0">Informasi lengkap tentang data anak</p>';
+                        html += '</div>';
+                        
+                        html += '<div class="data-section mb-3">';
+                        html += '<h6 class="fw-bold text-primary mb-3 d-flex align-items-center">';
+                        html += '<i class="mdi mdi-account-child me-2"></i>Data Pribadi';
+                        html += '</h6>';
+                        html += '<div class="data-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">';
+                        html += '<div class="data-item"><span class="text-muted small d-block">NIK Anak</span><span class="fw-medium">' + anak.nik_anak + '</span></div>';
+                        html += '<div class="data-item"><span class="text-muted small d-block">Nama Lengkap</span><span class="fw-medium">' + anak.nama_anak + '</span></div>';
+                        html += '<div class="data-item"><span class="text-muted small d-block">Tempat Lahir</span><span class="fw-medium">' + anak.tempat_lahir_anak + '</span></div>';
+                        html += '<div class="data-item"><span class="text-muted small d-block">Tanggal Lahir</span><span class="fw-medium">' + anak.tanggal_lahir_anak + '</span></div>';
+                        html += '<div class="data-item"><span class="text-muted small d-block">Anak Ke-</span><span class="fw-medium">' + anak.anak_ke + '</span></div>';
+                        html += '<div class="data-item"><span class="text-muted small d-block">Golongan Darah</span><span class="fw-medium">' + anak.gol_darah_anak + '</span></div>';
                         html += '</div></div>';
                         
-                        html += '<div class="info-card mb-3 p-3 rounded-4" style="background: linear-gradient(135deg, #11998e20 0%, #38ef7d20 100%);">';
-                        html += '<h6 class="fw-bold mb-3 d-flex align-items-center"><i class="mdi mdi-account-multiple me-2 text-success"></i>Data Orang Tua</h6>';
-                        html += '<div class="row g-2">';
-                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">No KK</span><p class="fw-medium mb-0">' + anak.no_kk + '</p></div></div>';
-                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Nama Ibu</span><p class="fw-medium mb-0">' + ibu.nama_ibu + '</p></div></div>';
-                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Nama Ayah</span><p class="fw-medium mb-0">' + ibu.nama_ayah + '</p></div></div>';
-                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Telepon</span><p class="fw-medium mb-0">' + (ibu.telepon || '-') + '</p></div></div>';
+                        html += '<div class="data-section mb-3">';
+                        html += '<h6 class="fw-bold text-success mb-3 d-flex align-items-center">';
+                        html += '<i class="mdi mdi-account-multiple me-2"></i>Data Orang Tua';
+                        html += '</h6>';
+                        html += '<div class="data-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">';
+                        html += '<div class="data-item"><span class="text-muted small d-block">Nomor KK</span><span class="fw-medium">' + anak.no_kk + '</span></div>';
+                        html += '<div class="data-item"><span class="text-muted small d-block">Nama Ibu</span><span class="fw-medium">' + ibu.nama_ibu + '</span></div>';
+                        html += '<div class="data-item"><span class="text-muted small d-block">Nama Ayah</span><span class="fw-medium">' + ibu.nama_ayah + '</span></div>';
+                        html += '<div class="data-item"><span class="text-muted small d-block">Nomor Telepon</span><span class="fw-medium">' + (ibu.telepon || '-') + '</span></div>';
                         html += '</div></div>';
                         
-                        html += '<div class="info-card p-3 rounded-4" style="background: linear-gradient(135deg, #f093fb20 0%, #f5576c20 100%);">';
-                        html += '<h6 class="fw-bold mb-2 d-flex align-items-center"><i class="mdi mdi-map-marker me-2 text-danger"></i>Alamat</h6>';
-                        html += '<p class="fw-medium mb-0 text-muted">' + (ibu.alamat || '-') + '</p>';
+                        html += '<div class="data-section">';
+                        html += '<h6 class="fw-bold text-danger mb-3 d-flex align-items-center">';
+                        html += '<i class="mdi mdi-map-marker me-2"></i>Alamat';
+                        html += '</h6>';
+                        html += '<div class="address-box p-3 rounded-3" style="background-color: #f8f9fa; border-left: 4px solid #dc3545;">';
+                        html += '<span class="fw-medium">' + (ibu.alamat || '-') + '</span>';
                         html += '</div>';
                         html += '</div>';
                         
-                        html += '<style>.detail-modal .info-card{border: 1px solid #e9ecef;}.detail-modal .info-item p{font-size: 14px;}</style>';
+                        html += '</div>';
+                        
+                        html += '<style>.detail-modal .data-item span{display: block;}.detail-modal .data-item .fw-medium{font-size: 14px;}</style>';
                         
                         Swal.fire({
                             html: html,
                             showCloseButton: true,
                             showConfirmButton: false,
-                            width: '600px',
-                            padding: '20px',
+                            width: '650px',
+                            padding: '24px',
                             customClass: {
                                 popup: 'rounded-4 shadow-lg'
                             }
