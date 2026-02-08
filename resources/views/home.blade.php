@@ -4,16 +4,9 @@
         <div class="content-wrapper">
             <div class="page-header">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <h2 class="mb-0 text-primary fw-bold">Dashboard Posyandu</h2>
                         <p class="text-muted mb-0">Selamat datang kembali, {{ Auth::user()->name }}</p>
-                    </div>
-                    <div class="col-md-6 text-md-end">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb mb-0 p-0">
-                                <li class="breadcrumb-item active">Home</li>
-                            </ol>
-                        </nav>
                     </div>
                 </div>
             </div>
