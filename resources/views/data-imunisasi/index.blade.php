@@ -7,7 +7,7 @@
                     <h3 class="fw-bold text-primary mb-1">Data Imunisasi</h3>
                     <p class="text-muted mb-0">Kelola data imunisasi/vaksin dengan mudah</p>
                 </div>
-                <a href="{{ route('data_imunisasi.create') }}" class="btn btn-primary btn-lg d-flex align-items-center shadow-sm" onclick="showForm()">
+                <a href="{{ route('data_imunisasi.create') }}" class="btn btn-primary btn-lg d-flex align-items-center shadow-sm" onclick="showForm()" style="border-radius: 12px;">
                     <i class="mdi mdi-needle me-2 fs-5"></i>
                     <span>Tambah Imunisasi</span>
                 </a>
