@@ -13,17 +13,15 @@
                                         class="btn btn-primary p-2 d-flex align-items-center justify-content-center"
                                         onclick="showForm()"><span class="text-light ms-2">Tambah Data Admin</span><i
                                             class="fas fa-plus ml-2"></i></a>
-                                    <form action="/pengaturan-akun/cari" method="GET">
-                                        <div class="input-group">
-                                            <input type="text" class="form-input" name="cari"
-                                                placeholder="Cari Nama Admin ..." value="{{ old('cari') }}">
-                                            <button type="submit" class="btn btn-primary"><i
-                                                    class="fas fa-search"></i></button>
-                                        </div>
-                                    </form>
+                                    <div class="input-group">
+                                        <input type="text" class="form-input" id="table-search-pengaturan-akun"
+                                            placeholder="Cari Nama Admin ..." autocomplete="off">
+                                        <button type="button" class="btn btn-primary" aria-label="Cari"><i
+                                                class="fas fa-search"></i></button>
+                                    </div>
                                 </div>
                                 <div class="table-responsive text-nowrap mt-3">
-                                    <table class="table text-center text-light">
+                                    <table class="table text-center text-light" id="table-pengaturan-akun">
                                         <thead>
                                             <tr>
                                                 <th class="text-primary">No</th>
@@ -98,5 +96,26 @@
                 confirmButtonColor: '#3085d6',
             });
         @endif
+
+        (function() {
+            const searchInput = document.getElementById('table-search-pengaturan-akun');
+            const table = document.getElementById('table-pengaturan-akun');
+            if (!searchInput || !table) {
+                return;
+            }
+
+            const rows = Array.from(table.querySelectorAll('tbody tr'));
+            const normalize = (text) => text.toLowerCase();
+
+            const filterRows = () => {
+                const query = normalize(searchInput.value.trim());
+                rows.forEach((row) => {
+                    const match = query === '' || normalize(row.textContent).includes(query);
+                    row.style.display = match ? '' : 'none';
+                });
+            };
+
+            searchInput.addEventListener('input', filterRows);
+        })();
     </script>
 @endsection

@@ -9,15 +9,14 @@
                             <div class="card-body">
                                 <h3 class="card-title">Tabel Data Orang Tua</h3>
                                 <div class="d-flex justify-content-end">
-                                    <form action="/data-orangtua/cari" method="GET">
-                                        <div class="input-group">
-                                            <input type="text" class="form-input" name="cari" placeholder="Cari Nama Ibu .." value="{{ old('cari') }}">
-                                            <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
-                                        </div>
-                                    </form>
+                                    <div class="input-group search-input-group" style="max-width: 360px;">
+                                        <span class="input-group-text bg-white text-primary border-primary"><i class="fas fa-search"></i></span>
+                                        <input type="text" class="form-input form-control border-start-0" id="table-search-data-orangtua" placeholder="Cari Nama Ibu .." autocomplete="off">
+                                        <button type="button" class="btn btn-primary px-3" aria-label="Cari"><span class="d-none d-lg-inline">Cari</span><i class="fas fa-paper-plane ms-1"></i></button>
+                                    </div>
                                 </div>
                                 <div class="table-responsive text-nowrap mt-3">
-                                    <table class="table text-center text-light">
+                                    <table class="table text-center text-light" id="table-data-orangtua">
                                         <thead>
                                             <tr>
                                                 <th class="text-primary">No</th>
@@ -80,7 +79,7 @@
         }
     </script>
     <script>
-        $(document).on('click', '.btn-detail', function() {
+$(document).on('click', '.btn-detail', function() {
     var no_kk = $(this).data('no_kk');
     $.ajax({
         url: '/data-orangtua/detail/' + no_kk,
@@ -147,6 +146,27 @@
         }
     });
 });
+
+        (function() {
+            const searchInput = document.getElementById('table-search-data-orangtua');
+            const table = document.getElementById('table-data-orangtua');
+            if (!searchInput || !table) {
+                return;
+            }
+
+            const rows = Array.from(table.querySelectorAll('tbody tr'));
+            const normalize = (text) => text.toLowerCase();
+
+            const filterRows = () => {
+                const query = normalize(searchInput.value.trim());
+                rows.forEach((row) => {
+                    const match = query === '' || normalize(row.textContent).includes(query);
+                    row.style.display = match ? '' : 'none';
+                });
+            };
+
+            searchInput.addEventListener('input', filterRows);
+        })();
 
         @if(session('success'))
             Swal.fire({

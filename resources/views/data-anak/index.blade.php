@@ -8,19 +8,18 @@
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title">Tabel Data Anak</h3>
-                                <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-between align-items-center">
                                     <div class="mt-1 me-3">
                                         <a href="{{ route('data_anak.create') }}" class="btn btn-primary p-2 d-flex align-items-center justify-content-center" onclick="showForm()"><span class="text-light ms-2">Tambah Data Anak</span><i class="fas fa-plus ml-2"></i></a>
                                     </div>
-                                    <form action="/data-anak/cari" method="GET">
-                                        <div class="input-group ml-3 row">
-                                            <input type="text" class="form-input mb-2" name="cari" placeholder="Cari Nama Anak .." value="{{ old('cari') }}">
-                                            <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
-                                        </div>
-                                    </form>
+                                    <div class="input-group search-input-group" style="max-width: 360px;">
+                                        <span class="input-group-text bg-white text-primary border-primary"><i class="fas fa-search"></i></span>
+                                        <input type="text" class="form-input form-control border-start-0" id="table-search-data-anak" placeholder="Cari Nama Anak .." autocomplete="off">
+                                        <button type="button" class="btn btn-primary px-3" aria-label="Cari"><span class="d-none d-lg-inline">Cari</span><i class="fas fa-paper-plane ms-1"></i></button>
+                                    </div>
                                 </div>
                                 <div class="table-responsive text-nowrap mt-3">
-                                    <table class="table text-center text-light">
+                                    <table class="table text-center text-light" id="table-data-anak">
                                         <thead>
                                             <tr>
                                                 <th class="text-primary">No</th>
@@ -183,5 +182,26 @@
                 confirmButtonColor: '#3085d6',
             });
         @endif
+
+        (function() {
+            const searchInput = document.getElementById('table-search-data-anak');
+            const table = document.getElementById('table-data-anak');
+            if (!searchInput || !table) {
+                return;
+            }
+
+            const rows = Array.from(table.querySelectorAll('tbody tr'));
+            const normalize = (text) => text.toLowerCase();
+
+            const filterRows = () => {
+                const query = normalize(searchInput.value.trim());
+                rows.forEach((row) => {
+                    const match = query === '' || normalize(row.textContent).includes(query);
+                    row.style.display = match ? '' : 'none';
+                });
+            };
+
+            searchInput.addEventListener('input', filterRows);
+        })();
     </script>
 @endsection
