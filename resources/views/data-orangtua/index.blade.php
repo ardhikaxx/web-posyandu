@@ -75,8 +75,8 @@
                                         </td>
                                         <td class="text-center">
                                             <div class="action-buttons d-flex justify-content-center gap-2">
-                                                <a class="btn btn-primary btn-sm rounded-3 d-flex align-items-center justify-content-center"
-                                                    href="{{ route('data_ibu.edit', $item->no_kk) }}"
+                                                <a class="btn btn-primary btn-sm rounded-3 d-flex align-items-center justify-content-center btn-edit"
+                                                    data-no_kk="{{ $item->no_kk }}"
                                                     title="Edit"
                                                     style="width: 36px; height: 36px;">
                                                     <i class="mdi mdi-pencil text-white"></i>
@@ -114,27 +114,111 @@
                 method: 'GET',
                 success: function(response) {
                     if (response) {
-                        var html = '<div class="row g-3"><div class="col-md-6"><table class="table table-borderless">';
-                        html += '<tr><th class="text-muted small py-2">Nomor KK</th><td class="fw-medium py-2">' + response.no_kk + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">NIK Ibu</th><td class="fw-medium py-2">' + response.nik_ibu + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Nama Ibu</th><td class="fw-medium py-2">' + response.nama_ibu + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Tempat Lahir</th><td class="fw-medium py-2">' + response.tempat_lahir_ibu + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Tanggal Lahir</th><td class="fw-medium py-2">' + response.tanggal_lahir_ibu + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Gol. Darah</th><td class="fw-medium py-2">' + response.gol_darah_ibu + '</td></tr>';
-                        html += '</table></div><div class="col-md-6"><table class="table table-borderless">';
-                        html += '<tr><th class="text-muted small py-2">NIK Ayah</th><td class="fw-medium py-2">' + response.nik_ayah + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Nama Ayah</th><td class="fw-medium py-2">' + response.nama_ayah + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Telepon</th><td class="fw-medium py-2">' + response.telepon + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Email</th><td class="fw-medium py-2">' + response.email_orang_tua + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2 py-4">Alamat</th><td class="fw-medium py-2">' + response.alamat + '</td></tr>';
-                        html += '</table></div></div>';
-
+                        var html = '<div class="detail-modal" style="background-color: #fff;">';
+                        html += '<div class="text-center mb-4">';
+                        html += '<h4 class="fw-bold mb-2" style="color: #333;">Detail Data Orang Tua</h4>';
+                        html += '<p class="text-muted small mb-0">Informasi lengkap tentang orang tua/wali</p>';
+                        html += '</div>';
+                        
+                        html += '<div class="info-section">';
+                        html += '<div class="info-card mb-3">';
+                        html += '<div class="card-header-custom d-flex align-items-center py-2 px-3" style="background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 12px 12px 0 0;">';
+                        html += '<i class="mdi mdi-account-woman text-white me-2"></i>';
+                        html += '<span class="text-white fw-semibold">Data Ibu</span>';
+                        html += '</div>';
+                        html += '<div class="card-body-custom p-3" style="background-color: #fff; border: 1px solid #e9ecef; border-top: none; border-radius: 0 0 12px 12px;">';
+                        html += '<div class="row g-3">';
+                        html += '<div class="col-6">';
+                        html += '<div class="info-box p-2 rounded-3" style="background-color: #f8f9fa;">';
+                        html += '<span class="text-muted small d-block mb-1">Nomor KK</span>';
+                        html += '<span class="fw-semibold">' + response.no_kk + '</span>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '<div class="col-6">';
+                        html += '<div class="info-box p-2 rounded-3" style="background-color: #f8f9fa;">';
+                        html += '<span class="text-muted small d-block mb-1">NIK Ibu</span>';
+                        html += '<span class="fw-semibold">' + response.nik_ibu + '</span>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '<div class="col-6">';
+                        html += '<div class="info-box p-2 rounded-3" style="background-color: #f8f9fa;">';
+                        html += '<span class="text-muted small d-block mb-1">Nama Lengkap</span>';
+                        html += '<span class="fw-semibold">' + response.nama_ibu + '</span>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '<div class="col-6">';
+                        html += '<div class="info-box p-2 rounded-3" style="background-color: #f8f9fa;">';
+                        html += '<span class="text-muted small d-block mb-1">Tempat, Tanggal Lahir</span>';
+                        html += '<span class="fw-semibold">' + response.tempat_lahir_ibu + ', ' + response.tanggal_lahir_ibu + '</span>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '<div class="col-6">';
+                        html += '<div class="info-box p-2 rounded-3" style="background-color: #f8f9fa;">';
+                        html += '<span class="text-muted small d-block mb-1">Golongan Darah</span>';
+                        html += '<span class="fw-semibold">' + response.gol_darah_ibu + '</span>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '<div class="col-6">';
+                        html += '<div class="info-box p-2 rounded-3" style="background-color: #f8f9fa;">';
+                        html += '<span class="text-muted small d-block mb-1">Email</span>';
+                        html += '<span class="fw-semibold">' + (response.email_orang_tua || '-') + '</span>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '</div>';
+                        
+                        html += '<div class="info-card mb-3">';
+                        html += '<div class="card-header-custom d-flex align-items-center py-2 px-3" style="background: linear-gradient(135deg, #11998e, #38ef7d); border-radius: 12px 12px 0 0;">';
+                        html += '<i class="mdi mdi-account text-white me-2"></i>';
+                        html += '<span class="text-white fw-semibold">Data Ayah</span>';
+                        html += '</div>';
+                        html += '<div class="card-body-custom p-3" style="background-color: #fff; border: 1px solid #e9ecef; border-top: none; border-radius: 0 0 12px 12px;">';
+                        html += '<div class="row g-3">';
+                        html += '<div class="col-6">';
+                        html += '<div class="info-box p-2 rounded-3" style="background-color: #f8f9fa;">';
+                        html += '<span class="text-muted small d-block mb-1">NIK Ayah</span>';
+                        html += '<span class="fw-semibold">' + response.nik_ayah + '</span>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '<div class="col-6">';
+                        html += '<div class="info-box p-2 rounded-3" style="background-color: #f8f9fa;">';
+                        html += '<span class="text-muted small d-block mb-1">Nama Lengkap</span>';
+                        html += '<span class="fw-semibold">' + response.nama_ayah + '</span>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '<div class="col-6">';
+                        html += '<div class="info-box p-2 rounded-3" style="background-color: #f8f9fa;">';
+                        html += '<span class="text-muted small d-block mb-1">Nomor Telepon</span>';
+                        html += '<span class="fw-semibold">' + response.telepon + '</span>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '</div>';
+                        
+                        html += '<div class="info-card">';
+                        html += '<div class="card-header-custom d-flex align-items-center py-2 px-3" style="background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 12px 12px 0 0;">';
+                        html += '<i class="mdi mdi-map-marker text-white me-2"></i>';
+                        html += '<span class="text-white fw-semibold">Alamat</span>';
+                        html += '</div>';
+                        html += '<div class="card-body-custom p-3" style="background-color: #fff; border: 1px solid #e9ecef; border-top: none; border-radius: 0 0 12px 12px;">';
+                        html += '<div class="address-box p-3 rounded-3" style="background: linear-gradient(135deg, #f093fb10, #f5576c10); border-left: 4px solid #f5576c;">';
+                        html += '<span class="fw-medium">' + response.alamat + '</span>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '</div>';
+                        
+                        html += '<style>.detail-modal .info-card{border: none !important; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden;}</style>';
+                        
                         Swal.fire({
-                            title: '<span class="text-primary">Detail Orang Tua</span>',
                             html: html,
                             showCloseButton: true,
                             showConfirmButton: false,
-                            width: '700px',
+                            width: '680px',
+                            padding: '24px',
+                            background: '#fff',
                             customClass: {
                                 popup: 'rounded-4 shadow-lg'
                             }
@@ -157,6 +241,11 @@
                     });
                 }
             });
+        });
+
+        $(document).on('click', '.btn-edit', function() {
+            var no_kk = $(this).data('no_kk');
+            window.location = '/data-orangtua/edit/' + no_kk;
         });
 
         (function() {
