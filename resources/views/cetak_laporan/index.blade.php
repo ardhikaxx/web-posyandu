@@ -62,7 +62,7 @@
                                     </thead>
                                     <tbody>
                                         @php
-                                            $groupedData = $data_posyandu->groupBy('tanggal_posyandu');
+                                            $groupedData = collect($data_posyandu->items())->groupBy('tanggal_posyandu');
                                         @endphp
                                         @foreach ($groupedData as $date => $group)
                                             @foreach ($group->groupBy('nama_anak') as $nama_anak => $items)
