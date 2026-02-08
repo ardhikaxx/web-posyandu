@@ -185,7 +185,6 @@
                                                 <div class="icon-bg rounded-circle d-flex align-items-center justify-content-center mx-auto" style="width: 70px; height: 70px; background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);">
                                                     <i class="mdi mdi-account-child fs-2" style="color: #667eea;"></i>
                                                 </div>
-                                                <div class="icon-shine position-absolute top-0 start-0 w-100 h-100 rounded-circle" style="background: linear-gradient(135deg, transparent 0%, rgba(102, 126, 234, 0.1) 100%);"></div>
                                             </div>
                                             <h6 class="fw-bold text-dark mb-1">Data Anak</h6>
                                             <p class="text-muted small mb-0" style="font-size: 12px;">Kelola data anak</p>
@@ -202,7 +201,6 @@
                                                 <div class="icon-bg rounded-circle d-flex align-items-center justify-content-center mx-auto" style="width: 70px; height: 70px; background: linear-gradient(135deg, #11998e20 0%, #38ef7d20 100%);">
                                                     <i class="mdi mdi-clipboard-pulse fs-2" style="color: #11998e;"></i>
                                                 </div>
-                                                <div class="icon-shine position-absolute top-0 start-0 w-100 h-100 rounded-circle" style="background: linear-gradient(135deg, transparent 0%, rgba(17, 153, 142, 0.1) 100%);"></div>
                                             </div>
                                             <h6 class="fw-bold text-dark mb-1">Data Posyandu</h6>
                                             <p class="text-muted small mb-0" style="font-size: 12px;">Penimbangan & imunisasi</p>
@@ -219,7 +217,6 @@
                                                 <div class="icon-bg rounded-circle d-flex align-items-center justify-content-center mx-auto" style="width: 70px; height: 70px; background: linear-gradient(135deg, #f093fb20 0%, #f5576c20 100%);">
                                                     <i class="mdi mdi-file-document fs-2" style="color: #f5576c;"></i>
                                                 </div>
-                                                <div class="icon-shine position-absolute top-0 start-0 w-100 h-100 rounded-circle" style="background: linear-gradient(135deg, transparent 0%, rgba(245, 87, 108, 0.1) 100%);"></div>
                                             </div>
                                             <h6 class="fw-bold text-dark mb-1">Laporan</h6>
                                             <p class="text-muted small mb-0" style="font-size: 12px;">Cetak laporan data</p>
@@ -236,7 +233,6 @@
                                                 <div class="icon-bg rounded-circle d-flex align-items-center justify-content-center mx-auto" style="width: 70px; height: 70px; background: linear-gradient(135deg, #4facfe20 0%, #00f2fe20 100%);">
                                                     <i class="mdi mdi-calendar-clock fs-2" style="color: #4facfe;"></i>
                                                 </div>
-                                                <div class="icon-shine position-absolute top-0 start-0 w-100 h-100 rounded-circle" style="background: linear-gradient(135deg, transparent 0%, rgba(79, 172, 254, 0.1) 100%);"></div>
                                             </div>
                                             <h6 class="fw-bold text-dark mb-1">Jadwal</h6>
                                             <p class="text-muted small mb-0" style="font-size: 12px;">Kelola jadwal posyandu</p>
@@ -270,9 +266,7 @@
             transform: scale(1.1) rotate(5deg);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
-        .action-card:hover .icon-shine {
-            animation: shine 1s ease-in-out infinite;
-        }
+        
         .action-card:hover .hover-indicator {
             width: 100% !important;
         }
