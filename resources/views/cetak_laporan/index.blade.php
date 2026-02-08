@@ -16,7 +16,7 @@
                     <p class="text-muted mb-0">Lihat dan cetak laporan data penimbangan anak</p>
                 </div>
                 <div class="d-flex gap-2">
-                    <a href="{{ route('data_laporan.cetakPdf', ['month' => $filterMonth ?? null]) }}" class="btn btn-lg d-flex align-items-center shadow-sm text-white" style="background-color: #800000; border-color: #800000; border-radius: 12px;">
+                    <a href="{{ route('data_laporan.cetakPdf', ['month' => $filterMonth ?? null]) }}" class="btn btn-lg d-flex align-items-center shadow-sm text-white" style="background-color: #dc3545; border-color: #dc3545; border-radius: 12px;">
                         <i class="mdi mdi-file-pdf-box me-2 fs-5"></i>
                         <span>Cetak PDF</span>
                     </a>
