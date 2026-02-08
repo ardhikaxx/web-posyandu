@@ -1,154 +1,105 @@
-<nav class="sidebar sidebar-offcanvas" id="sidebar">
-    <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="sidebar-brand brand-logo " href="{{ route('home')}}"><img src="{{ asset('assets/images/logo.png') }}" id="brand-logo" alt="logo" style="height: 45px;" /></a>
+<nav class="sidebar sidebar-offcanvas" id="sidebar" style="background: #fff; box-shadow: 1px 0 3px rgba(0,0,0,0.08);">
+    <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top" style="background: #fff; border-bottom: 1px solid #f0f0f0;">
+        <a class="sidebar-brand brand-logo" href="{{ route('home')}}"><img src="{{ asset('assets/images/logo.png') }}" id="brand-logo" alt="logo" style="height: 40px;" /></a>
         <a class="sidebar-brand brand-logo-mini" href="{{ route('home')}}"><img src="{{ asset('assets/images/logo-mini.png') }}" id="brand-logo-mini" alt="logo" /></a>
     </div>
-    <ul class="nav">
-        {{-- <li class="nav-item profile">
-            <div class="profile-desc">
-                <div class="profile-pic">
-                    <div class="count-indicator">
-                        <img class="img-xs rounded-circle " src="assets/images/faces/face15.jpg" alt="">
-                        <span class="count bg-success"></span>
-                    </div>
-                    <div class="profile-name">
-                        <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
-                        <span>Gold Member</span>
-                    </div>
-                </div>
-                <a href="#" id="profile-dropdown" data-toggle="dropdown"><i
-                        class="mdi mdi-dots-vertical"></i></a>
-                <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list"
-                    aria-labelledby="profile-dropdown">
-                    <a href="#" class="dropdown-item preview-item">
-                        <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
-                                <i class="mdi mdi-settings text-primary"></i>
-                            </div>
-                        </div>
-                        <div class="preview-item-content">
-                            <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
-                        </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item preview-item">
-                        <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
-                                <i class="mdi mdi-onepassword  text-info"></i>
-                            </div>
-                        </div>
-                        <div class="preview-item-content">
-                            <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
-                        </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item preview-item">
-                        <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
-                                <i class="mdi mdi-calendar-today text-success"></i>
-                            </div>
-                        </div>
-                        <div class="preview-item-content">
-                            <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </li> --}}
-        <li class="nav-item nav-category">
-            <span class="nav-link">Navigation</span>
+    <ul class="nav" style="padding: 16px 12px;">
+        <li class="nav-item nav-category mb-2">
+            <span class="nav-link" style="color: #999; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Menu</span>
         </li>
-        <li class="nav-item menu-items mt-1 mb-1">
-            <a class="nav-link" href="{{ route('home')}}">
-                <span class="menu-icon">
-                    <i class="mdi mdi-speedometer"></i>
-                </span>
-                <span class="menu-title">Dashboard</span>
-            </a>
-        </li>
-        {{-- <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
-                aria-controls="ui-basic">
-                <span class="menu-icon">
-                    <i class="mdi mdi-laptop"></i>
-                </span>
-                <span class="menu-title">Basic UI Elements</span>
-                <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="ui-basic">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link"
-                            href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                    <li class="nav-item"> <a class="nav-link"
-                            href="pages/ui-features/typography.html">Typography</a></li>
-                </ul>
-            </div>
-        </li> --}}
         <li class="nav-item menu-items mb-1">
-            <a class="nav-link" href="{{ route('pages.data_anak')}}">
+            <a class="nav-link" href="{{ route('home')}}" style="border-radius: 8px; padding: 12px 14px;">
                 <span class="menu-icon">
-                    <i class="mdi mdi-human-handsup"></i>
+                    <i class="mdi mdi-view-dashboard" style="color: #666;"></i>
                 </span>
-                <span class="menu-title">Data Anak</span>
+                <span class="menu-title" style="color: #333; font-weight: 500;">Dashboard</span>
             </a>
         </li>
         <li class="nav-item menu-items mb-1">
-            <a class="nav-link" href="{{ route('pages.data_ibu')}}">
+            <a class="nav-link" href="{{ route('pages.data_anak')}}" style="border-radius: 8px; padding: 12px 14px;">
                 <span class="menu-icon">
-                    <i class="mdi mdi-account-child"></i>
+                    <i class="mdi mdi-account-child" style="color: #666;"></i>
                 </span>
-                <span class="menu-title">Data Orang Tua</span>
+                <span class="menu-title" style="color: #333; font-weight: 500;">Data Anak</span>
             </a>
         </li>
         <li class="nav-item menu-items mb-1">
-            <a class="nav-link" href="{{ route('pages.data_imunisasi')}}">
+            <a class="nav-link" href="{{ route('pages.data_ibu')}}" style="border-radius: 8px; padding: 12px 14px;">
                 <span class="menu-icon">
-                    <i class="mdi mdi-chart-bar"></i>
+                    <i class="mdi mdi-account-multiple" style="color: #666;"></i>
                 </span>
-                <span class="menu-title">Data Imunisasi</span>
+                <span class="menu-title" style="color: #333; font-weight: 500;">Data Orang Tua</span>
             </a>
         </li>
         <li class="nav-item menu-items mb-1">
-            <a class="nav-link" href="{{ route('pages.jadwal')}}">
+            <a class="nav-link" href="{{ route('pages.data_imunisasi')}}" style="border-radius: 8px; padding: 12px 14px;">
                 <span class="menu-icon">
-                    <i class="mdi mdi-calendar"></i>
+                    <i class="mdi mdi-shield-check" style="color: #666;"></i>
                 </span>
-                <span class="menu-title">Jadwal Posyandu</span>
+                <span class="menu-title" style="color: #333; font-weight: 500;">Data Imunisasi</span>
             </a>
         </li>
         <li class="nav-item menu-items mb-1">
-            <a class="nav-link" href="{{ route('pages.edukasi')}}">
+            <a class="nav-link" href="{{ route('pages.jadwal')}}" style="border-radius: 8px; padding: 12px 14px;">
                 <span class="menu-icon">
-                    <i class="mdi mdi-file-document-box"></i>
+                    <i class="mdi mdi-calendar-clock" style="color: #666;"></i>
                 </span>
-                <span class="menu-title">Edukasi</span>
+                <span class="menu-title" style="color: #333; font-weight: 500;">Jadwal Posyandu</span>
             </a>
         </li>
         <li class="nav-item menu-items mb-1">
-            <a class="nav-link" href="{{ route('pages.penimbangan')}}">
+            <a class="nav-link" href="{{ route('pages.edukasi')}}" style="border-radius: 8px; padding: 12px 14px;">
                 <span class="menu-icon">
-                    <i class="mdi mdi-weight"></i>
+                    <i class="mdi mdi-book-open-page-variant" style="color: #666;"></i>
                 </span>
-                <span class="menu-title">Data Posyandu</span>
+                <span class="menu-title" style="color: #333; font-weight: 500;">Edukasi</span>
             </a>
         </li>
         <li class="nav-item menu-items mb-1">
-            <a class="nav-link" href="{{ route('data_laporan.index') }}">
+            <a class="nav-link" href="{{ route('pages.penimbangan')}}" style="border-radius: 8px; padding: 12px 14px;">
                 <span class="menu-icon">
-                    <i class="mdi mdi-printer"></i>
+                    <i class="mdi mdi-scale-bathroom" style="color: #666;"></i>
                 </span>
-                <span class="menu-title">Cetak Laporan</span>
+                <span class="menu-title" style="color: #333; font-weight: 500;">Data Posyandu</span>
             </a>
-        </li>   
+        </li>
+        <li class="nav-item menu-items mb-1">
+            <a class="nav-link" href="{{ route('data_laporan.index') }}" style="border-radius: 8px; padding: 12px 14px;">
+                <span class="menu-icon">
+                    <i class="mdi mdi-file-chart" style="color: #666;"></i>
+                </span>
+                <span class="menu-title" style="color: #333; font-weight: 500;">Cetak Laporan</span>
+            </a>
+        </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ route('pages.pengaturanakun')}}">
+            <a class="nav-link" href="{{ route('pages.pengaturanakun')}}" style="border-radius: 8px; padding: 12px 14px;">
                 <span class="menu-icon">
-                    <i class="mdi mdi-account-settings"></i>
+                    <i class="mdi mdi-cog" style="color: #666;"></i>
                 </span>
-                <span class="menu-title">Pengaturan Akun</span>
+                <span class="menu-title" style="color: #333; font-weight: 500;">Pengaturan Akun</span>
             </a>
         </li>
     </ul>
 </nav>
+
+<style>
+    .sidebar .nav-link:hover {
+        background: #f3f4f6 !important;
+    }
+    .sidebar .nav-link:hover .menu-icon i {
+        color: #3b82f6 !important;
+    }
+    .sidebar .nav-link:hover .menu-title {
+        color: #3b82f6 !important;
+    }
+    .sidebar .nav-link.active {
+        background: #eff6ff !important;
+    }
+    .sidebar .nav-link.active .menu-icon i {
+        color: #3b82f6 !important;
+    }
+    .sidebar .nav-link.active .menu-title {
+        color: #3b82f6 !important;
+        font-weight: 600 !important;
+    }
+</style>
