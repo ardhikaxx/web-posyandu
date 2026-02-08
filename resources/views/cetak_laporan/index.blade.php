@@ -70,14 +70,9 @@
                                     @foreach ($group->groupBy('nama_anak') as $nama_anak => $items)
                                         <tr style="height: 80px;">
                                             <td>
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <div class="avatar-sm bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center">
-                                                        <i class="mdi mdi-human-handsup text-primary"></i>
-                                                    </div>
-                                                    <div>
-                                                        <span class="fw-semibold">{{ $nama_anak }}</span>
-                                                        <small class="text-muted d-block small">Anak</small>
-                                                    </div>
+                                                <div>
+                                                    <span class="fw-semibold">{{ $nama_anak }}</span>
+                                                    <small class="text-muted d-block small">Anak</small>
                                                 </div>
                                             </td>
                                             <td class="text-center">

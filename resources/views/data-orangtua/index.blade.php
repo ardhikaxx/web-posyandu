@@ -58,9 +58,6 @@
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center gap-3">
-                                                <div class="avatar-sm bg-info-subtle rounded-circle d-flex align-items-center justify-content-center">
-                                                    <i class="mdi mdi-account text-info"></i>
-                                                </div>
                                                 <div>
                                                     <span class="fw-semibold d-block">{{ $item->nama_ayah }}</span>
                                                     <small class="text-muted">Ayah</small>
