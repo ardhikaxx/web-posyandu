@@ -8,11 +8,11 @@
                     <p class="text-muted mb-0">Kelola data penimbangan dan imunisasi anak</p>
                 </div>
                 <div class="d-flex gap-2">
-                    <a href="{{ route('data_posyandu.create') }}" class="btn btn-primary btn-lg d-flex align-items-center shadow-sm">
+                    <a href="{{ route('data_posyandu.create') }}" class="btn btn-primary btn-lg d-flex align-items-center shadow-sm" style="border-radius: 12px;">
                         <i class="mdi mdi-clipboard-plus me-2 fs-5"></i>
                         <span>Tambah Data</span>
                     </a>
-                    <a href="{{ route('data_posyandu_terlambat.create') }}" class="btn btn-warning btn-lg d-flex align-items-center shadow-sm text-dark">
+                    <a href="{{ route('data_posyandu_terlambat.create') }}" class="btn btn-warning btn-lg d-flex align-items-center shadow-sm text-dark" style="border-radius: 12px;">
                         <i class="mdi mdi-clock-alert me-2 fs-5"></i>
                         <span>Imunisasi Terlambat</span>
                     </a>
