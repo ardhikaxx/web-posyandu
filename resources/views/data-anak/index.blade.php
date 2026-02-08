@@ -2,27 +2,15 @@
 @section('content')
     <div class="main-panel">
         <div class="content-wrapper">
-            <div class="page-header-wrapper mb-4">
-                <div class="header-card card border-0 overflow-hidden" style="border-radius: 16px; background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);">
-                    <div class="card-body p-4">
-                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
-                            <div class="d-flex align-items-center">
-                                <div class="header-icon-wrapper d-flex align-items-center justify-content-center rounded-4 me-3" style="width: 56px; height: 56px; background: linear-gradient(135deg, #667eea, #764ba2); box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);">
-                                    <i class="mdi mdi-account-child text-white fs-4"></i>
-                                </div>
-                                <div>
-                                    <h3 class="fw-bold text-dark mb-1">Data Anak</h3>
-                                    <p class="text-muted mb-0 small">Kelola data anak dengan mudah dan efisien</p>
-                                </div>
-                            </div>
-                            <a href="{{ route('data_anak.create') }}" class="btn btn-primary btn-lg d-flex align-items-center shadow-sm mt-3 mt-md-0" onclick="showForm()" style="border-radius: 12px; background: linear-gradient(135deg, #667eea, #764ba2); border: none;">
-                                <i class="mdi mdi-plus-circle-outline me-2 fs-5"></i>
-                                <span>Tambah Data Anak</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="header-decoration" style="height: 4px; background: linear-gradient(90deg, #667eea, #764ba2, #667eea);"></div>
+            <div class="page-header d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h3 class="fw-bold text-primary mb-1">Data Anak</h3>
+                    <p class="text-muted mb-0">Kelola data anak dengan mudah</p>
                 </div>
+                <a href="{{ route('data_anak.create') }}" class="btn btn-primary btn-lg d-flex align-items-center shadow-sm" onclick="showForm()" style="border-radius: 12px;">
+                    <i class="mdi mdi-plus-circle-outline me-2 fs-5"></i>
+                    <span>Tambah Data Anak</span>
+                </a>
             </div>
 
             <div class="card border-0 shadow-sm" style="border-radius: 16px;">
