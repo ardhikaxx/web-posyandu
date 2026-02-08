@@ -178,7 +178,7 @@
                         <div class="card-body">
                             <div class="row g-3">
                                 <div class="col-md-3 col-sm-6">
-                                    <a href="{{ route('data_anak.index') }}" class="card border-0 shadow-sm text-decoration-none h-100" style="border-radius: 12px; transition: all 0.3s ease;">
+                                    <a href="{{ route('pages.data_anak') }}" class="card border-0 shadow-sm text-decoration-none h-100" style="border-radius: 12px; transition: all 0.3s ease;">
                                         <div class="card-body text-center py-4">
                                             <div class="icon-shape bg-primary-subtle rounded-3 p-3 mb-3 mx-auto" style="width: 60px; height: 60px;">
                                                 <i class="mdi mdi-account-child fs-3 text-primary"></i>
@@ -188,7 +188,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-3 col-sm-6">
-                                    <a href="{{ route('data_posyandu.index') }}" class="card border-0 shadow-sm text-decoration-none h-100" style="border-radius: 12px; transition: all 0.3s ease;">
+                                    <a href="{{ route('pages.penimbangan') }}" class="card border-0 shadow-sm text-decoration-none h-100" style="border-radius: 12px; transition: all 0.3s ease;">
                                         <div class="card-body text-center py-4">
                                             <div class="icon-shape bg-success-subtle rounded-3 p-3 mb-3 mx-auto" style="width: 60px; height: 60px;">
                                                 <i class="mdi mdi-clipboard-pulse fs-3 text-success"></i>
@@ -208,7 +208,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-3 col-sm-6">
-                                    <a href="{{ route('data_jadwal.index') }}" class="card border-0 shadow-sm text-decoration-none h-100" style="border-radius: 12px; transition: all 0.3s ease;">
+                                    <a href="{{ route('pages.jadwal') }}" class="card border-0 shadow-sm text-decoration-none h-100" style="border-radius: 12px; transition: all 0.3s ease;">
                                         <div class="card-body text-center py-4">
                                             <div class="icon-shape bg-info-subtle rounded-3 p-3 mb-3 mx-auto" style="width: 60px; height: 60px;">
                                                 <i class="mdi mdi-calendar-clock fs-3 text-info"></i>
