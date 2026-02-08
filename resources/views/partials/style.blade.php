@@ -20582,7 +20582,7 @@ button.bg-dark:focus {
     z-index: 1030;
 }
 
-@supports (position: sticky) {
+@supports (position: 'sticky') {
     .sticky-top {
         position: sticky;
         top: 0;
