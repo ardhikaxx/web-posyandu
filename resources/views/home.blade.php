@@ -159,88 +159,91 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <div class="card border-0 shadow-sm" style="border-radius: 20px;">
-                        <div class="card-header bg-transparent border-0 pt-4 px-4 pb-0">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h5 class="fw-bold mb-1">
-                                        <i class="mdi mdi-lightning-bolt text-warning me-2"></i>Aksi Cepat
-                                    </h5>
+                    <div class="card border-0 shadow-sm" style="border-radius: 24px;">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="flex-shrink-0">
+                                    <div class="header-icon-wrapper rounded-4 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                        <i class="mdi mdi-lightning-bolt text-white fs-5"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="fw-bold mb-0 text-dark">Aksi Cepat</h5>
                                     <p class="text-muted mb-0 small">Akses menu utama dengan sekali klik</p>
                                 </div>
-                                <span class="badge bg-light text-muted px-3 py-2 rounded-pill">
-                                    <i class="mdi mdi-gesture-tap me-1"></i>4 Menu
-                                </span>
+                                <div class="flex-shrink-0">
+                                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill fw-medium">
+                                        4 Menu
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-body px-4 pb-4">
-                            <div class="row g-4">
+                            <div class="row g-3">
                                 <div class="col-md-3 col-sm-6">
-                                    <a href="{{ route('pages.data_anak') }}" class="quick-action-card card border-0 h-100 text-decoration-none position-relative overflow-hidden" style="border-radius: 16px; transition: all 0.3s ease;">
-                                        <div class="card-body text-center py-4 px-2">
-                                            <div class="icon-wrapper bg-primary-subtle rounded-4 p-4 mb-3 mx-auto position-relative">
-                                                <div class="icon-shape bg-primary rounded-3 d-flex align-items-center justify-content-center position-relative" style="width: 56px; height: 56px;">
-                                                    <i class="mdi mdi-account-child fs-3 text-primary"></i>
+                                    <a href="{{ route('pages.data_anak') }}" class="action-card card h-100 text-decoration-none position-relative overflow-hidden" style="border-radius: 20px; background: linear-gradient(180deg, #ffffff 0%, #f8f9ff 100%); border: 1px solid #e9ecef;">
+                                        <div class="card-body text-center py-4 px-3">
+                                            <div class="icon-container position-relative mb-3">
+                                                <div class="icon-bg rounded-circle d-flex align-items-center justify-content-center mx-auto" style="width: 70px; height: 70px; background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);">
+                                                    <i class="mdi mdi-account-child fs-2" style="color: #667eea;"></i>
                                                 </div>
-                                                <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-primary">
-                                                    <i class="mdi mdi-arrow-right"></i>
-                                                </span>
+                                                <div class="icon-shine position-absolute top-0 start-0 w-100 h-100 rounded-circle" style="background: linear-gradient(135deg, transparent 0%, rgba(102, 126, 234, 0.1) 100%);"></div>
                                             </div>
                                             <h6 class="fw-bold text-dark mb-1">Data Anak</h6>
-                                            <p class="text-muted small mb-0">Kelola data anak</p>
+                                            <p class="text-muted small mb-0" style="font-size: 12px;">Kelola data anak</p>
                                         </div>
-                                        <div class="action-overlay position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-0" style="transition: all 0.3s ease;"></div>
+                                        <div class="card-footer bg-transparent border-0 p-0">
+                                            <div class="hover-indicator rounded-bottom" style="height: 4px; background: linear-gradient(90deg, #667eea, #764ba2);"></div>
+                                        </div>
                                     </a>
                                 </div>
                                 <div class="col-md-3 col-sm-6">
-                                    <a href="{{ route('pages.penimbangan') }}" class="quick-action-card card border-0 h-100 text-decoration-none position-relative overflow-hidden" style="border-radius: 16px; transition: all 0.3s ease;">
-                                        <div class="card-body text-center py-4 px-2">
-                                            <div class="icon-wrapper bg-success-subtle rounded-4 p-4 mb-3 mx-auto position-relative">
-                                                <div class="icon-shape bg-success rounded-3 d-flex align-items-center justify-content-center position-relative" style="width: 56px; height: 56px;">
-                                                    <i class="mdi mdi-clipboard-pulse fs-3 text-success"></i>
+                                    <a href="{{ route('pages.penimbangan') }}" class="action-card card h-100 text-decoration-none position-relative overflow-hidden" style="border-radius: 20px; background: linear-gradient(180deg, #ffffff 0%, #f0fff4 100%); border: 1px solid #e9ecef;">
+                                        <div class="card-body text-center py-4 px-3">
+                                            <div class="icon-container position-relative mb-3">
+                                                <div class="icon-bg rounded-circle d-flex align-items-center justify-content-center mx-auto" style="width: 70px; height: 70px; background: linear-gradient(135deg, #11998e20 0%, #38ef7d20 100%);">
+                                                    <i class="mdi mdi-clipboard-pulse fs-2" style="color: #11998e;"></i>
                                                 </div>
-                                                <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-success">
-                                                    <i class="mdi mdi-arrow-right"></i>
-                                                </span>
+                                                <div class="icon-shine position-absolute top-0 start-0 w-100 h-100 rounded-circle" style="background: linear-gradient(135deg, transparent 0%, rgba(17, 153, 142, 0.1) 100%);"></div>
                                             </div>
                                             <h6 class="fw-bold text-dark mb-1">Data Posyandu</h6>
-                                            <p class="text-muted small mb-0">Penimbangan & imunisasi</p>
+                                            <p class="text-muted small mb-0" style="font-size: 12px;">Penimbangan & imunisasi</p>
                                         </div>
-                                        <div class="action-overlay position-absolute top-0 start-0 w-100 h-100 bg-success opacity-0" style="transition: all 0.3s ease;"></div>
+                                        <div class="card-footer bg-transparent border-0 p-0">
+                                            <div class="hover-indicator rounded-bottom" style="height: 4px; background: linear-gradient(90deg, #11998e, #38ef7d);"></div>
+                                        </div>
                                     </a>
                                 </div>
                                 <div class="col-md-3 col-sm-6">
-                                    <a href="{{ route('data_laporan.index') }}" class="quick-action-card card border-0 h-100 text-decoration-none position-relative overflow-hidden" style="border-radius: 16px; transition: all 0.3s ease;">
-                                        <div class="card-body text-center py-4 px-2">
-                                            <div class="icon-wrapper bg-warning-subtle rounded-4 p-4 mb-3 mx-auto position-relative">
-                                                <div class="icon-shape bg-warning rounded-3 d-flex align-items-center justify-content-center position-relative" style="width: 56px; height: 56px;">
-                                                    <i class="mdi mdi-file-document fs-3 text-warning"></i>
+                                    <a href="{{ route('data_laporan.index') }}" class="action-card card h-100 text-decoration-none position-relative overflow-hidden" style="border-radius: 20px; background: linear-gradient(180deg, #ffffff 0%, #fffbeb 100%); border: 1px solid #e9ecef;">
+                                        <div class="card-body text-center py-4 px-3">
+                                            <div class="icon-container position-relative mb-3">
+                                                <div class="icon-bg rounded-circle d-flex align-items-center justify-content-center mx-auto" style="width: 70px; height: 70px; background: linear-gradient(135deg, #f093fb20 0%, #f5576c20 100%);">
+                                                    <i class="mdi mdi-file-document fs-2" style="color: #f5576c;"></i>
                                                 </div>
-                                                <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-warning">
-                                                    <i class="mdi mdi-arrow-right"></i>
-                                                </span>
+                                                <div class="icon-shine position-absolute top-0 start-0 w-100 h-100 rounded-circle" style="background: linear-gradient(135deg, transparent 0%, rgba(245, 87, 108, 0.1) 100%);"></div>
                                             </div>
                                             <h6 class="fw-bold text-dark mb-1">Laporan</h6>
-                                            <p class="text-muted small mb-0">Cetak laporan data</p>
+                                            <p class="text-muted small mb-0" style="font-size: 12px;">Cetak laporan data</p>
                                         </div>
-                                        <div class="action-overlay position-absolute top-0 start-0 w-100 h-100 bg-warning opacity-0" style="transition: all 0.3s ease;"></div>
+                                        <div class="card-footer bg-transparent border-0 p-0">
+                                            <div class="hover-indicator rounded-bottom" style="height: 4px; background: linear-gradient(90deg, #f093fb, #f5576c);"></div>
+                                        </div>
                                     </a>
                                 </div>
                                 <div class="col-md-3 col-sm-6">
-                                    <a href="{{ route('pages.jadwal') }}" class="quick-action-card card border-0 h-100 text-decoration-none position-relative overflow-hidden" style="border-radius: 16px; transition: all 0.3s ease;">
-                                        <div class="card-body text-center py-4 px-2">
-                                            <div class="icon-wrapper bg-info-subtle rounded-4 p-4 mb-3 mx-auto position-relative">
-                                                <div class="icon-shape bg-info rounded-3 d-flex align-items-center justify-content-center position-relative" style="width: 56px; height: 56px;">
-                                                    <i class="mdi mdi-calendar-clock fs-3 text-info"></i>
+                                    <a href="{{ route('pages.jadwal') }}" class="action-card card h-100 text-decoration-none position-relative overflow-hidden" style="border-radius: 20px; background: linear-gradient(180deg, #ffffff 0%, #e8f4ff 100%); border: 1px solid #e9ecef;">
+                                        <div class="card-body text-center py-4 px-3">
+                                            <div class="icon-container position-relative mb-3">
+                                                <div class="icon-bg rounded-circle d-flex align-items-center justify-content-center mx-auto" style="width: 70px; height: 70px; background: linear-gradient(135deg, #4facfe20 0%, #00f2fe20 100%);">
+                                                    <i class="mdi mdi-calendar-clock fs-2" style="color: #4facfe;"></i>
                                                 </div>
-                                                <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-info">
-                                                    <i class="mdi mdi-arrow-right"></i>
-                                                </span>
+                                                <div class="icon-shine position-absolute top-0 start-0 w-100 h-100 rounded-circle" style="background: linear-gradient(135deg, transparent 0%, rgba(79, 172, 254, 0.1) 100%);"></div>
                                             </div>
                                             <h6 class="fw-bold text-dark mb-1">Jadwal</h6>
-                                            <p class="text-muted small mb-0">Kelola jadwal posyandu</p>
+                                            <p class="text-muted small mb-0" style="font-size: 12px;">Kelola jadwal posyandu</p>
                                         </div>
-                                        <div class="action-overlay position-absolute top-0 start-0 w-100 h-100 bg-info opacity-0" style="transition: all 0.3s ease;"></div>
+                                        <div class="card-footer bg-transparent border-0 p-0">
+                                            <div class="hover-indicator rounded-bottom" style="height: 4px; background: linear-gradient(90deg, #4facfe, #00f2fe);"></div>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -252,18 +255,39 @@
     </div>
 
     <style>
-        .quick-action-card:hover {
+        .header-icon-wrapper {
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        .action-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+        .action-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
         }
-        .quick-action-card:hover .action-overlay {
-            opacity: 1 !important;
+        .action-card:hover .icon-bg {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
-        .quick-action-card:hover .icon-shape {
-            transform: scale(1.1);
+        .action-card:hover .icon-shine {
+            animation: shine 1s ease-in-out infinite;
         }
-        .icon-shape {
-            transition: transform 0.3s ease;
+        .action-card:hover .hover-indicator {
+            width: 100% !important;
+        }
+        .hover-indicator {
+            transition: width 0.4s ease;
+            width: 100%;
+        }
+        .icon-bg {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes shine {
+            0% { opacity: 0; transform: translateX(-100%); }
+            50% { opacity: 1; transform: translateX(100%); }
+            100% { opacity: 0; transform: translateX(100%); }
         }
     </style>
 
