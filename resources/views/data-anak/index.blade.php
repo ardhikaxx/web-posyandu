@@ -137,26 +137,55 @@
                     if (response.anak && response.ibu) {
                         var anak = response.anak;
                         var ibu = response.ibu;
-                        var html = '<div class="row g-3"><div class="col-md-6"><table class="table table-borderless">';
-                        html += '<tr><th class="text-muted small py-2">NIK Anak</th><td class="fw-medium py-2">' + anak.nik_anak + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Nama Anak</th><td class="fw-medium py-2">' + anak.nama_anak + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Tempat Lahir</th><td class="fw-medium py-2">' + anak.tempat_lahir_anak + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Tanggal Lahir</th><td class="fw-medium py-2">' + anak.tanggal_lahir_anak + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Anak Ke</th><td class="fw-medium py-2">' + anak.anak_ke + '</td></tr>';
-                        html += '</table></div><div class="col-md-6"><table class="table table-borderless">';
-                        html += '<tr><th class="text-muted small py-2">Gol. Darah</th><td class="fw-medium py-2">' + anak.gol_darah_anak + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Jenis Kelamin</th><td class="fw-medium py-2">' + anak.jenis_kelamin_anak + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">No KK</th><td class="fw-medium py-2">' + anak.no_kk + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Nama Ibu</th><td class="fw-medium py-2">' + ibu.nama_ibu + '</td></tr>';
-                        html += '<tr><th class="text-muted small py-2">Nama Ayah</th><td class="fw-medium py-2">' + ibu.nama_ayah + '</td></tr>';
-                        html += '</table></div><div class="col-12"><table class="table table-borderless"><tr><th class="text-muted small py-2">Alamat</th><td class="fw-medium py-2">' + ibu.alamat + '</td></tr></table></div></div>';
-
+                        var avatarColor = anak.jenis_kelamin_anak === 'Perempuan' ? '#e83e8c' : '#0dcaf0';
+                        var avatarIcon = anak.jenis_kelamin_anak === 'Perempuan' ? 'mdi-gender-female' : 'mdi-gender-male';
+                        
+                        var html = '<div class="detail-modal">';
+                        html += '<div class="profile-header text-center mb-4">';
+                        html += '<div class="avatar-container mx-auto mb-3">';
+                        html += '<div class="avatar-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; background: linear-gradient(135deg, ' + avatarColor + ' 0%, ' + avatarColor + '80 100%); border-radius: 50%; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">';
+                        html += '<i class="mdi ' + avatarIcon + ' text-white" style="font-size: 36px;"></i>';
+                        html += '</div>';
+                        html += '<h5 class="fw-bold mb-1">' + anak.nama_anak + '</h5>';
+                        html += '<span class="badge rounded-pill px-3" style="background-color: ' + avatarColor + '20; color: ' + avatarColor + ';">' + anak.jenis_kelamin_anak + '</span>';
+                        html += '</div>';
+                        html += '</div>';
+                        
+                        html += '<div class="info-section">';
+                        html += '<div class="info-card mb-3 p-3 rounded-4" style="background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);">';
+                        html += '<h6 class="fw-bold mb-3 d-flex align-items-center"><i class="mdi mdi-account-child me-2 text-primary"></i>Data Anak</h6>';
+                        html += '<div class="row g-2">';
+                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">NIK</span><p class="fw-medium mb-0">' + anak.nik_anak + '</p></div></div>';
+                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Nama</span><p class="fw-medium mb-0">' + anak.nama_anak + '</p></div></div>';
+                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Tempat Lahir</span><p class="fw-medium mb-0">' + anak.tempat_lahir_anak + '</p></div></div>';
+                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Tanggal Lahir</span><p class="fw-medium mb-0">' + anak.tanggal_lahir_anak + '</p></div></div>';
+                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Anak Ke</span><p class="fw-medium mb-0">' + anak.anak_ke + '</p></div></div>';
+                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Gol. Darah</span><p class="fw-medium mb-0">' + anak.gol_darah_anak + '</p></div></div>';
+                        html += '</div></div>';
+                        
+                        html += '<div class="info-card mb-3 p-3 rounded-4" style="background: linear-gradient(135deg, #11998e20 0%, #38ef7d20 100%);">';
+                        html += '<h6 class="fw-bold mb-3 d-flex align-items-center"><i class="mdi mdi-account-multiple me-2 text-success"></i>Data Orang Tua</h6>';
+                        html += '<div class="row g-2">';
+                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">No KK</span><p class="fw-medium mb-0">' + anak.no_kk + '</p></div></div>';
+                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Nama Ibu</span><p class="fw-medium mb-0">' + ibu.nama_ibu + '</p></div></div>';
+                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Nama Ayah</span><p class="fw-medium mb-0">' + ibu.nama_ayah + '</p></div></div>';
+                        html += '<div class="col-6"><div class="info-item"><span class="text-muted small">Telepon</span><p class="fw-medium mb-0">' + (ibu.telepon || '-') + '</p></div></div>';
+                        html += '</div></div>';
+                        
+                        html += '<div class="info-card p-3 rounded-4" style="background: linear-gradient(135deg, #f093fb20 0%, #f5576c20 100%);">';
+                        html += '<h6 class="fw-bold mb-2 d-flex align-items-center"><i class="mdi mdi-map-marker me-2 text-danger"></i>Alamat</h6>';
+                        html += '<p class="fw-medium mb-0 text-muted">' + (ibu.alamat || '-') + '</p>';
+                        html += '</div>';
+                        html += '</div>';
+                        
+                        html += '<style>.detail-modal .info-card{border: 1px solid #e9ecef;}.detail-modal .info-item p{font-size: 14px;}</style>';
+                        
                         Swal.fire({
-                            title: '<span class="text-primary">Detail Anak</span>',
                             html: html,
                             showCloseButton: true,
                             showConfirmButton: false,
-                            width: '700px',
+                            width: '600px',
+                            padding: '20px',
                             customClass: {
                                 popup: 'rounded-4 shadow-lg'
                             }
@@ -166,7 +195,7 @@
                             text: 'Data tidak ditemukan!',
                             icon: 'error',
                             confirmButtonText: 'OK',
-                            confirmButtonColor: '#d33',
+                            confirmButtonColor: '#dc3545',
                         });
                     }
                 },
@@ -175,7 +204,7 @@
                         text: 'Terjadi kesalahan saat mengambil data!',
                         icon: 'error',
                         confirmButtonText: 'OK',
-                        confirmButtonColor: '#d33',
+                        confirmButtonColor: '#dc3545',
                     });
                 }
             });
