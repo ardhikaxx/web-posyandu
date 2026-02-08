@@ -16,19 +16,16 @@
             <div class="card border-0 shadow-sm" style="border-radius: 16px;">
                 <div class="card-body p-4">
                     <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="input-group" style="max-width: 400px; min-width: 280px;">
-                                <span class="input-group-text bg-white border-end-0">
-                                    <i class="mdi mdi-magnify text-primary"></i>
-                                </span>
-                                <form action="/data-imunisasi/cari" method="GET" class="d-flex w-100">
-                                    <input type="text" class="form-control border-start-0 ps-0" name="cari" placeholder="Cari Nama Vaksin..." value="{{ old('cari') }}">
-                                </form>
-                            </div>
-                            <span class="badge bg-light text-muted px-3 py-2 rounded-pill">
-                                Total: {{ $data_imunisasi->total() }} Vaksin
-                            </span>
+                        <div class="search-wrapper position-relative" style="max-width: 400px; min-width: 280px; width: 100%;">
+                            <i class="mdi mdi-magnify search-icon position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
+                            <form action="/data-imunisasi/cari" method="GET" class="d-flex w-100">
+                                <input type="text" class="form-control search-input ps-5" name="cari" placeholder="Cari Nama Vaksin..." value="{{ old('cari') }}">
+                            </form>
+                            <div class="search-focus-bg"></div>
                         </div>
+                        <span class="badge bg-light text-muted px-3 py-2 rounded-pill">
+                            Total: {{ $data_imunisasi->total() }} Vaksin
+                        </span>
                     </div>
 
                     <div class="table-responsive">
@@ -119,39 +116,33 @@
             border-color: #e7f1ff;
             color: #0d6efd;
         }
-        .btn-soft-primary:hover {
+.btn-soft-primary:hover {
             background-color: #0d6efd;
             border-color: #0d6efd;
             color: #fff;
         }
-        .icon-btn {
-            width: 36px;
-            height: 36px;
-            padding: 0;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+        .search-wrapper {
+            width: 100%;
+            max-width: 400px;
         }
-        .table thead th {
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 0.5px;
-            border-bottom: 2px solid #e9ecef;
+        .search-input {
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+            padding: 12px 16px 12px 44px;
+            background-color: #f8f9fa;
+            transition: all 0.3s ease;
+            font-size: 14px;
         }
-        .pagination .page-link {
-            border-radius: 8px;
-            margin: 0 2px;
-            border: none;
-            color: #495057;
+        .search-input:focus {
+            background-color: #fff;
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.1);
+            outline: none;
         }
-        .pagination .page-link:hover {
-            background-color: #e7f1ff;
-            color: #0d6efd;
-        }
-        .pagination .page-item.active .page-link {
-            background-color: #0d6efd;
-            color: #fff;
+        .search-icon {
+            z-index: 10;
+            font-size: 18px;
+            color: #6c757d;
         }
     </style>
 @endsection
