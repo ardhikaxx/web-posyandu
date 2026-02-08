@@ -43,15 +43,19 @@
 <script>
     function confirmLogout() {
         Swal.fire({
-            title: 'Keluar?',
-            text: 'Apakah Anda yakin?',
-            icon: 'question',
+            title: 'Konfirmasi Keluar',
+            text: 'Apakah Anda yakin ingin keluar?',
+            icon: 'warning',
             showCancelButton: true,
-            confirmButtonColor: '#333',
-            cancelButtonColor: '#666',
-            confirmButtonText: 'Ya',
+            confirmButtonColor: '#dc3545',
+            cancelButtonColor: '#6c757d',
+            confirmButtonText: 'Ya, Keluar',
             cancelButtonText: 'Batal',
             background: '#fff',
+            customClass: {
+                confirmButton: 'rounded-1',
+                cancelButton: 'rounded-1'
+            }
         }).then((result) => {
             if (result.isConfirmed) {
                 document.getElementById('logout-form').submit();
