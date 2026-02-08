@@ -12,7 +12,7 @@
                         <i class="mdi mdi-clipboard-plus me-2 fs-5"></i>
                         <span>Tambah Data</span>
                     </a>
-                    <a href="{{ route('data_posyandu_terlambat.create') }}" class="btn btn-warning btn-lg d-flex align-items-center shadow-sm text-dark" style="border-radius: 12px;">
+                    <a href="{{ route('data_posyandu_terlambat.create') }}" class="btn btn-warning btn-lg d-flex align-items-center shadow-sm text-white" style="border-radius: 12px;">
                         <i class="mdi mdi-clock-alert me-2 fs-5"></i>
                         <span>Imunisasi Terlambat</span>
                     </a>
