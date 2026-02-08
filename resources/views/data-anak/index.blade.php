@@ -73,7 +73,7 @@
                                         </td>
                                         <td class="text-center">
                                             <div class="action-buttons d-flex justify-content-center gap-2">
-                                                <button class="btn btn-info btn-sm rounded-3 d-flex align-items-center justify-content-center"
+                                                <button class="btn btn-info btn-sm rounded-3 d-flex align-items-center justify-content-center btn-detail"
                                                     data-nik_anak="{{ $item->nik_anak }}"
                                                     title="Detail"
                                                     style="width: 36px; height: 36px;">
