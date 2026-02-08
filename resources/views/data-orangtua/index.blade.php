@@ -7,12 +7,6 @@
                     <h3 class="fw-bold text-primary mb-1">Data Orang Tua</h3>
                     <p class="text-muted mb-0">Kelola data orang tua/wali dengan mudah</p>
                 </div>
-                <div class="d-flex gap-2">
-                    <button class="btn btn-outline-secondary d-flex align-items-center shadow-sm" title="Export Excel">
-                        <i class="mdi mdi-file-excel me-2"></i>
-                        <span>Export</span>
-                    </button>
-                </div>
             </div>
 
             <div class="card border-0 shadow-sm" style="border-radius: 16px;">
