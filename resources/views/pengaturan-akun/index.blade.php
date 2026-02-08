@@ -27,14 +27,6 @@
                                 Total: {{ $pengaturan_akun->total() }} Admin
                             </span>
                         </div>
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-outline-secondary btn-sm" title="Export Excel">
-                                <i class="mdi mdi-file-excel"></i>
-                            </button>
-                            <button class="btn btn-outline-secondary btn-sm" title="Print">
-                                <i class="mdi mdi-printer"></i>
-                            </button>
-                        </div>
                     </div>
 
                     <div class="table-responsive">

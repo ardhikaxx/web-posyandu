@@ -29,11 +29,6 @@
                                 Total: {{ $data_ibu->total() }} Data
                             </span>
                         </div>
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-outline-secondary btn-sm" title="Print">
-                                <i class="mdi mdi-printer"></i>
-                            </button>
-                        </div>
                     </div>
 
                     <div class="table-responsive">
