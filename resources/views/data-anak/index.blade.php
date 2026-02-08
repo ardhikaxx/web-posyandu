@@ -138,15 +138,10 @@
                         var anak = response.anak;
                         var ibu = response.ibu;
                         
-                        var html = '<div class="detail-modal">';
-                        html += '<div class="profile-card text-center mb-4">';
-                        html += '<div class="profile-avatar mx-auto mb-3">';
-                        html += '<div class="avatar-icon d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);">';
-                        html += '<i class="mdi mdi-account-child text-white" style="font-size: 42px;"></i>';
-                        html += '</div>';
-                        html += '</div>';
-                        html += '<h4 class="fw-bold mb-1">' + anak.nama_anak + '</h4>';
-                        html += '<span class="badge badge-custom px-3 py-2 rounded-pill" style="background: linear-gradient(135deg, #667eea20, #764ba220); color: #667eea; font-size: 12px;">NIK: ' + anak.nik_anak + '</span>';
+                        var html = '<div class="detail-modal" style="background-color: #fff;">';
+                        html += '<div class="text-center mb-4">';
+                        html += '<h4 class="fw-bold mb-2" style="color: #333;">Detail Data Anak</h4>';
+                        html += '<p class="text-muted small mb-0">Informasi lengkap tentang data anak</p>';
                         html += '</div>';
                         
                         html += '<div class="info-section">';
@@ -157,6 +152,18 @@
                         html += '</div>';
                         html += '<div class="card-body-custom p-3" style="background-color: #fff; border: 1px solid #e9ecef; border-top: none; border-radius: 0 0 12px 12px;">';
                         html += '<div class="row g-3">';
+                        html += '<div class="col-6">';
+                        html += '<div class="info-box p-2 rounded-3" style="background-color: #f8f9fa;">';
+                        html += '<span class="text-muted small d-block mb-1">NIK</span>';
+                        html += '<span class="fw-semibold">' + anak.nik_anak + '</span>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '<div class="col-6">';
+                        html += '<div class="info-box p-2 rounded-3" style="background-color: #f8f9fa;">';
+                        html += '<span class="text-muted small d-block mb-1">Nama Lengkap</span>';
+                        html += '<span class="fw-semibold">' + anak.nama_anak + '</span>';
+                        html += '</div>';
+                        html += '</div>';
                         html += '<div class="col-6">';
                         html += '<div class="info-box p-2 rounded-3" style="background-color: #f8f9fa;">';
                         html += '<span class="text-muted small d-block mb-1">Tempat, Tanggal Lahir</span>';
@@ -241,8 +248,8 @@
                             showCloseButton: true,
                             showConfirmButton: false,
                             width: '680px',
-                            padding: '0',
-                            background: 'transparent',
+                            padding: '24px',
+                            background: '#fff',
                             customClass: {
                                 popup: 'rounded-4 shadow-lg'
                             }
