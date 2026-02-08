@@ -68,11 +68,12 @@
                                             </div>
                                         </td>
                                         <td class="text-center">
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <a class="btn btn-soft-primary btn-sm icon-btn rounded-3"
+                                            <div class="action-buttons d-flex justify-content-center gap-2">
+                                                <a class="btn btn-primary btn-sm rounded-3 d-flex align-items-center justify-content-center"
                                                     href="{{ route('data_imunisasi.edit', $item->id_vaksin) }}"
-                                                    title="Edit">
-                                                    <i class="mdi mdi-pencil-outline"></i>
+                                                    title="Edit"
+                                                    style="width: 36px; height: 36px;">
+                                                    <i class="mdi mdi-pencil text-white"></i>
                                                 </a>
                                             </div>
                                         </td>
