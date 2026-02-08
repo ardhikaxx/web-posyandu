@@ -13,7 +13,7 @@
                                         <span class="text-light ms-2">Tambah Data Posyandu</span>
                                         <i class="fas fa-plus ml-2"></i>
                                     </a>
-                                    <a href="{{ route('data_posyandu_terlambat.create') }}" class="btn btn-primary p-2 d-flex align-items-center justify-content-center">
+                                    <a href="{{ route('data_posyandu_terlambat.create') }}" class="btn btn-primary p-2 d-flex align-items-center justify-content-center ms-lg-3">
                                         <span class="text-light ms-2">Tambah Data Terlambat Imunisasi</span>
                                         <i class="fas fa-clock ml-2"></i>
                                     </a>
