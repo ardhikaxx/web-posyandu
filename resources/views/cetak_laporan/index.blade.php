@@ -43,7 +43,8 @@
                                                 '07' => 'Juli', '08' => 'Agustus', '09' => 'September',
                                                 '10' => 'Oktober', '11' => 'November', '12' => 'Desember'
                                             ];
-                                            echo $months[$filterMonth] ?? 'Semua Bulan';
+                                            $filterKey = (string) $filterMonth;
+                                            echo $months[$filterKey] ?? 'Semua Bulan';
                                         @endphp
                                     </h5>
                                 </div>
