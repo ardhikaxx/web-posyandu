@@ -83,21 +83,24 @@
                                             <span class="text-muted">{{ $item->nama_ibu }}</span>
                                         </td>
                                         <td class="text-center">
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <button class="btn btn-soft-warning btn-sm icon-btn rounded-3"
+                                            <div class="action-buttons d-flex justify-content-center gap-2">
+                                                <button class="btn btn-info btn-sm rounded-3 d-flex align-items-center justify-content-center"
                                                     data-nik_anak="{{ $item->nik_anak }}"
-                                                    title="Detail">
-                                                    <i class="mdi mdi-eye-outline"></i>
+                                                    title="Detail"
+                                                    style="width: 36px; height: 36px;">
+                                                    <i class="mdi mdi-eye-outline text-white"></i>
                                                 </button>
-                                                <a class="btn btn-soft-primary btn-sm icon-btn rounded-3"
+                                                <a class="btn btn-primary btn-sm rounded-3 d-flex align-items-center justify-content-center"
                                                     href="{{ route('data_anak.edit', $item->nik_anak) }}"
-                                                    title="Edit">
-                                                    <i class="mdi mdi-pencil-outline"></i>
+                                                    title="Edit"
+                                                    style="width: 36px; height: 36px;">
+                                                    <i class="mdi mdi-pencil text-white"></i>
                                                 </a>
-                                                <button class="btn btn-soft-danger btn-sm icon-btn rounded-3"
+                                                <button class="btn btn-danger btn-sm rounded-3 d-flex align-items-center justify-content-center"
                                                     onclick="deleteConfirmation('{{ route('data_anak.hapus', $item->nik_anak) }}')"
-                                                    title="Hapus">
-                                                    <i class="mdi mdi-delete-outline"></i>
+                                                    title="Hapus"
+                                                    style="width: 36px; height: 36px;">
+                                                    <i class="mdi mdi-trash-can text-white"></i>
                                                 </button>
                                             </div>
                                         </td>
