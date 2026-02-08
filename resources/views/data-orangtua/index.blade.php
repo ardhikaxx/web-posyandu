@@ -81,7 +81,7 @@
                                                     style="width: 36px; height: 36px;">
                                                     <i class="mdi mdi-pencil text-white"></i>
                                                 </a>
-                                                <button class="btn btn-info btn-sm rounded-3 d-flex align-items-center justify-content-center"
+                                                <button class="btn btn-info btn-sm rounded-3 d-flex align-items-center justify-content-center btn-detail"
                                                     data-no_kk="{{ $item->no_kk }}"
                                                     title="Detail"
                                                     style="width: 36px; height: 36px;">
@@ -113,7 +113,7 @@
                 url: '/data-orangtua/detail/' + no_kk,
                 method: 'GET',
                 success: function(response) {
-                    if (response) {
+                    if (response && Object.keys(response).length > 0) {
                         var html = '<div class="detail-modal" style="background-color: #fff;">';
                         html += '<div class="text-center mb-4">';
                         html += '<h4 class="fw-bold mb-2" style="color: #333;">Detail Data Orang Tua</h4>';
