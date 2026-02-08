@@ -146,7 +146,7 @@
                         
                         html += '<div class="info-section">';
                         html += '<div class="info-card mb-3">';
-                        html += '<div class="card-header-custom d-flex align-items-center py-2 px-3" style="background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 12px 12px 0 0;">';
+                        html += '<div class="card-header-custom d-flex align-items-center py-2 px-3" style="background: linear-gradient(135deg, #0d6efd, #0a58ca); border-radius: 12px 12px 0 0;">';
                         html += '<i class="mdi mdi-account-child text-white me-2"></i>';
                         html += '<span class="text-white fw-semibold">Data Pribadi</span>';
                         html += '</div>';
@@ -193,7 +193,7 @@
                         html += '</div>';
                         
                         html += '<div class="info-card mb-3">';
-                        html += '<div class="card-header-custom d-flex align-items-center py-2 px-3" style="background: linear-gradient(135deg, #11998e, #38ef7d); border-radius: 12px 12px 0 0;">';
+                        html += '<div class="card-header-custom d-flex align-items-center py-2 px-3" style="background: linear-gradient(135deg, #0d6efd, #0a58ca); border-radius: 12px 12px 0 0;">';
                         html += '<i class="mdi mdi-account-multiple text-white me-2"></i>';
                         html += '<span class="text-white fw-semibold">Data Orang Tua</span>';
                         html += '</div>';
@@ -228,12 +228,12 @@
                         html += '</div>';
                         
                         html += '<div class="info-card">';
-                        html += '<div class="card-header-custom d-flex align-items-center py-2 px-3" style="background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 12px 12px 0 0;">';
+                        html += '<div class="card-header-custom d-flex align-items-center py-2 px-3" style="background: linear-gradient(135deg, #0d6efd, #0a58ca); border-radius: 12px 12px 0 0;">';
                         html += '<i class="mdi mdi-map-marker text-white me-2"></i>';
                         html += '<span class="text-white fw-semibold">Alamat</span>';
                         html += '</div>';
                         html += '<div class="card-body-custom p-3" style="background-color: #fff; border: 1px solid #e9ecef; border-top: none; border-radius: 0 0 12px 12px;">';
-                        html += '<div class="address-box p-3 rounded-3" style="background: linear-gradient(135deg, #f093fb10, #f5576c10); border-left: 4px solid #f5576c;">';
+                        html += '<div class="address-box p-3 rounded-3" style="background: linear-gradient(135deg, #0d6efd10, #0a58ca10); border-left: 4px solid #0d6efd;">';
                         html += '<span class="fw-medium">' + (ibu.alamat || '-') + '</span>';
                         html += '</div>';
                         html += '</div>';
