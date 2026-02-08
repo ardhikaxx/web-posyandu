@@ -85,16 +85,18 @@
                                             @endif
                                         </td>
                                         <td class="text-center">
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <a class="btn btn-soft-primary btn-sm icon-btn rounded-3"
+                                            <div class="action-buttons d-flex justify-content-center gap-2">
+                                                <a class="btn btn-primary btn-sm rounded-3 d-flex align-items-center justify-content-center"
                                                     href="{{ route('pengaturanakun.edit', $item->id) }}"
-                                                    title="Edit">
-                                                    <i class="mdi mdi-pencil-outline"></i>
+                                                    title="Edit"
+                                                    style="width: 36px; height: 36px;">
+                                                    <i class="mdi mdi-pencil text-white"></i>
                                                 </a>
-                                                <button class="btn btn-soft-danger btn-sm icon-btn rounded-3"
+                                                <button class="btn btn-danger btn-sm rounded-3 d-flex align-items-center justify-content-center"
                                                     onclick="deleteConfirmation('{{ route('pengaturanakun.hapus', $item->id) }}')"
-                                                    title="Hapus">
-                                                    <i class="mdi mdi-delete-outline"></i>
+                                                    title="Hapus"
+                                                    style="width: 36px; height: 36px;">
+                                                    <i class="mdi mdi-trash-can text-white"></i>
                                                 </button>
                                             </div>
                                         </td>
