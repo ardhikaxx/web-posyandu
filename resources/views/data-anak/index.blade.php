@@ -50,12 +50,7 @@
                                             <span class="fw-medium">{{ $item->nik_anak }}</span>
                                         </td>
                                         <td>
-                                            <div class="d-flex align-items-center gap-3">
-                                                <div class="avatar-sm bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center">
-                                                    <i class="mdi mdi-account-child text-primary"></i>
-                                                </div>
-                                                <span class="fw-semibold">{{ $item->nama_anak }}</span>
-                                            </div>
+                                            <span class="fw-semibold">{{ $item->nama_anak }}</span>
                                         </td>
                                         <td>
                                             @if($item->jenis_kelamin_anak == 'Perempuan')
