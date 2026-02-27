@@ -47,7 +47,7 @@
                                             </span>
                                         </td>
                                         <td>
-                                            <span class="fw-medium">{{ $item->nik_anak }}</span>
+                                            <span class="fw-medium">@maskid($item->nik_anak)</span>
                                         </td>
                                         <td>
                                             <span class="fw-semibold">{{ $item->nama_anak }}</span>

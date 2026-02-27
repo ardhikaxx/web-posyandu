@@ -43,7 +43,7 @@
                                             </span>
                                         </td>
                                         <td>
-                                            <span class="fw-medium">{{ $item->no_kk }}</span>
+                                            <span class="fw-medium">@maskid($item->no_kk)</span>
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center gap-3">
