@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ForgotPasswordController extends Controller
 {
     public function lupapassword() {
-        return view('Auth.forgot_password');
+        return view('auth.forgot_password');
     }
 
     public function validateCaptcha(Request $request)
