@@ -285,6 +285,18 @@
         }
     </style>
 
+    <style>
+        .bg-primary-subtle { background-color: #e7f1ff; }
+        .bg-pink-subtle { background-color: #fce4ec; }
+        .bg-info-subtle { background-color: #e7f5ff; }
+        .bg-warning-subtle { background-color: #fff3cd; }
+        .bg-success-subtle { background-color: #d1e7dd; }
+        .text-pink { color: #e83e8c !important; }
+        .text-info { color: #0dcaf0 !important; }
+    </style>
+@endsection
+
+@push('scripts')
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -294,7 +306,7 @@
                     labels: ['Anak Perempuan', 'Anak Laki-laki'],
                     datasets: [{
                         label: 'Jumlah Anak',
-                        data: [{{ $jumlah_anak_perempuan }}, {{ $jumlah_anak_laki_laki }}],
+                        data: [{{ (int)$jumlah_anak_perempuan }}, {{ (int)$jumlah_anak_laki_laki }}],
                         backgroundColor: ['#e83e8c', '#0dcaf0'],
                         borderColor: ['#fff', '#fff'],
                         borderWidth: 3,
@@ -330,7 +342,7 @@
                     labels: ['Jumlah Anak', 'Jumlah Orang Tua'],
                     datasets: [{
                         label: 'Total',
-                        data: [{{ $jumlah_anak }}, {{ $jumlah_orang_tua }}],
+                        data: [{{ (int)$jumlah_anak }}, {{ (int)$jumlah_orang_tua }}],
                         backgroundColor: ['#6610f2', '#fd7e14'],
                         borderColor: ['#6610f2', '#fd7e14'],
                         borderWidth: 0,
@@ -368,13 +380,4 @@
             });
         });
     </script>
-    <style>
-        .bg-primary-subtle { background-color: #e7f1ff; }
-        .bg-pink-subtle { background-color: #fce4ec; }
-        .bg-info-subtle { background-color: #e7f5ff; }
-        .bg-warning-subtle { background-color: #fff3cd; }
-        .bg-success-subtle { background-color: #d1e7dd; }
-        .text-pink { color: #e83e8c !important; }
-        .text-info { color: #0dcaf0 !important; }
-    </style>
-@endsection
+@endpush

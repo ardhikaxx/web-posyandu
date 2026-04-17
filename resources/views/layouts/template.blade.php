@@ -49,6 +49,7 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
+    @stack('scripts')
 </body>
 
 </html>

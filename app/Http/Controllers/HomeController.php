@@ -25,26 +25,17 @@ class HomeController extends Controller
      */
     public function index()
     { 
-        // Mengambil data anak perempuan
-        $anak_perempuan = DataAnak::where('jenis_kelamin_anak', 'Perempuan')->get();
+        // Menghitung jumlah data anak perempuan (mengantisipasi "Perempuan" atau "P")
+        $jumlah_anak_perempuan = DataAnak::where('jenis_kelamin_anak', 'LIKE', 'P%')->count();
 
-        // Menghitung jumlah data anak perempuan
-        $jumlah_anak_perempuan = $anak_perempuan->count();
-        // Mengambil data anak perempuan
-        $anak_laki_laki = DataAnak::where('jenis_kelamin_anak', 'Laki-laki')->get();
+        // Menghitung jumlah data anak laki-laki (mengantisipasi "Laki-laki" atau "L")
+        $jumlah_anak_laki_laki = DataAnak::where('jenis_kelamin_anak', 'LIKE', 'L%')->count();
 
-        // Menghitung jumlah data anak perempuan
-        $jumlah_anak_laki_laki = $anak_laki_laki->count();
-        // Mengambil data anak
-        $anak = DataAnak::all();
+        // Menghitung total jumlah data anak
+        $jumlah_anak = DataAnak::count();
 
-        // Menghitung jumlah data anak
-        $jumlah_anak = $anak->count();
-        // Mengambil data anak
-        $orang_tua = DataIbu::all();
-
-        // Menghitung jumlah data anak
-        $jumlah_orang_tua = $orang_tua->count();
+        // Menghitung total jumlah data orang tua
+        $jumlah_orang_tua = DataIbu::count();
 
         return view('home', compact('jumlah_anak','jumlah_anak_perempuan','jumlah_anak_laki_laki','jumlah_orang_tua'));
     }
