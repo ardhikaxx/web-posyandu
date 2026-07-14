@@ -1,4 +1,4 @@
-# Website Posyandu
+﻿# Website Posyandu
 
 Sistem informasi manajemen Posyandu untuk pengelolaan data ibu, anak, imunisasi, dan laporan kegiatan posyandu.
 
@@ -155,7 +155,7 @@ Jika project ini bermanfaat, Anda dapat mendukung pengembangan selanjutnya melal
 
 <div align="center">
 
-![QRIS](public/assets/qris.png)
+<img src="public/assets/qris.png" alt="QRIS" width="250" />
 
 **Scan QRIS di atas untuk berdonasi**
 
